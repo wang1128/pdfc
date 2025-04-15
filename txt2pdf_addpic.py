@@ -1,6 +1,12 @@
 """
 txt2pdf_converter.py
-功能：带智能图片压缩的目录结构保留PDF转换器
+最终版功能：
+- 保留目录结构
+- 智能字体处理
+- 每页4张图片布局（2x2）
+- 增强图片清晰度
+- 视频文件检测
+- 防重复转换
 """
 import logging
 import os
@@ -14,9 +20,10 @@ from PIL import Image
 
 # 配置参数
 DEFAULT_FONT_SIZE = 12
-MAX_PAGE_WIDTH = 190  # A4纸张宽度（单位：mm）
+MAX_PAGE_WIDTH = 190  # A4纸张宽度（mm）
 MAX_PAGE_HEIGHT = 270
 SUPPORTED_IMAGE_EXT = ('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.webp')
+VIDEO_EXT = ('.mp4', '.avi', '.mov', '.mkv', '.flv', '.wmv')
 LOG_FILE = "conversion.log"
 
 
@@ -53,12 +60,12 @@ class FileOutput:
 
 
 class PDFConverter:
-    def __init__(self, compress_ratio=0.6, jpeg_quality=85):
+    def __init__(self, compress_ratio=0.8, jpeg_quality=95):  # 调整压缩参数
         self.pdf = FPDF()
         self.current_font = None
         self.available_fonts = []
-        self.compress_ratio = compress_ratio  # 分辨率压缩比例
-        self.jpeg_quality = jpeg_quality  # JPEG压缩质量
+        self.compress_ratio = compress_ratio  # 提高压缩比例
+        self.jpeg_quality = jpeg_quality  # 提高JPEG质量
         self._init_pdf()
 
     def _init_pdf(self):
@@ -148,7 +155,7 @@ class PDFConverter:
             self.pdf.ln(3)
 
     def add_images(self, image_folder):
-        """智能图片压缩处理"""
+        """优化后的图片处理（2x2布局）"""
         images = sorted(
             [f for f in os.listdir(image_folder) if f.lower().endswith(SUPPORTED_IMAGE_EXT)],
             key=lambda x: os.path.splitext(x)[0]
@@ -157,17 +164,17 @@ class PDFConverter:
         if not images:
             return
 
-        # 布局参数
-        IMAGES_PER_PAGE = 6
-        COLS = 2
-        ROWS = 3
+        # 新版布局参数
+        IMAGES_PER_PAGE = 4  # 改为4张/页
+        COLS = 2  # 2列布局
+        ROWS = 2  # 2行布局
         MARGIN_X = 10
         MARGIN_Y = 15
         SPACING = 5
 
-        # 计算单元格尺寸
+        # 计算单元格尺寸（增大显示区域）
         page_width_avail = MAX_PAGE_WIDTH - 2 * MARGIN_X
-        cell_width = (page_width_avail - SPACING) / COLS
+        cell_width = (page_width_avail - (COLS - 1) * SPACING) / COLS
         page_height_avail = MAX_PAGE_HEIGHT - MARGIN_Y - 15
         cell_height = (page_height_avail - (ROWS - 1) * SPACING) / ROWS
 
@@ -179,59 +186,65 @@ class PDFConverter:
                     if i % IMAGES_PER_PAGE == 0:
                         self.pdf.add_page()
 
-                    # 计算位置
+                    # 计算位置（新版布局计算）
                     position = i % IMAGES_PER_PAGE
                     row = position // COLS
                     col = position % COLS
                     x = MARGIN_X + col * (cell_width + SPACING)
                     y = MARGIN_Y + row * (cell_height + SPACING)
 
-                    # 图片压缩处理
+                    # 图片处理流程
                     img_path = os.path.join(image_folder, img_file)
                     temp_path = os.path.join(temp_dir, f"compressed_{i}.jpg")
 
                     with Image.open(img_path) as img:
-                        # 格式转换
-                        if img.mode in ('RGBA', 'P'):
-                            img = img.convert("RGB")
+                        # 保留透明度通道
+                        if img.mode == 'RGBA':
+                            background = Image.new('RGB', img.size, (255, 255, 255))
+                            background.paste(img, mask=img.split()[3])
+                            img = background
 
-                        # 分辨率压缩
-                        new_size = (
-                            int(img.width * self.compress_ratio),
-                            int(img.height * self.compress_ratio)
-                        )
-                        img = img.resize(new_size, Image.Resampling.LANCZOS)
+                        # 优化压缩逻辑
+                        if self.compress_ratio < 1:
+                            new_size = (
+                                int(img.width * self.compress_ratio),
+                                int(img.height * self.compress_ratio)
+                            )
+                            img = img.resize(new_size, Image.Resampling.LANCZOS)
 
-                        # 保存压缩文件
+                        # 高质量保存
                         img.save(
                             temp_path,
                             quality=self.jpeg_quality,
                             optimize=True,
-                            subsampling=1  # 4:4:4色度抽样
+                            subsampling=0  # 关闭色度抽样
                         )
 
-                    # 计算缩放尺寸
+                    # 精确计算显示尺寸
                     with Image.open(temp_path) as compressed_img:
+                        # 转换为毫米单位
                         mm_width = compressed_img.width * 0.264583
                         mm_height = compressed_img.height * 0.264583
 
-                        # 自适应缩放
+                        # 自适应缩放（使用全部空间）
                         width_ratio = cell_width / mm_width
                         height_ratio = cell_height / mm_height
                         scale_ratio = min(width_ratio, height_ratio)
 
-                        # 应用缩放
+                        # 应用最佳缩放
                         scaled_width = mm_width * scale_ratio
                         scaled_height = mm_height * scale_ratio
                         x_offset = (cell_width - scaled_width) / 2
                         y_offset = (cell_height - scaled_height) / 2
 
+                        # 添加高精度图片
                         self.pdf.image(
                             temp_path,
                             x=x + x_offset,
                             y=y + y_offset,
                             w=scaled_width,
-                            h=scaled_height
+                            h=scaled_height,
+                            keep_aspect_ratio=True
                         )
 
             except Exception as e:
@@ -244,33 +257,35 @@ class PDFConverter:
 def convert_file(txt_path, output_dir, root_folder):
     """文件转换流程"""
     try:
+        # 视频文件检测
+        txt_dir = os.path.dirname(txt_path)
+        if any(f.lower().endswith(VIDEO_EXT) for f in os.listdir(txt_dir)):
+            logging.info(f"发现视频文件，跳过目录：{os.path.basename(txt_dir)}")
+            return False
+
         # 生成路径标识
-        relative_path = os.path.relpath(os.path.dirname(txt_path), root_folder)
+        relative_path = os.path.relpath(txt_dir, root_folder)
         path_parts = [sanitize_filename(p) for p in relative_path.split(os.sep) if p]
 
         # 文件名生成规则
         base_name = sanitize_filename(os.path.splitext(os.path.basename(txt_path))[0])
-        if len(path_parts) >= 3:
-            folder_name = "_".join(path_parts[-3:])
-        else:
-            folder_name = "_".join(path_parts) if path_parts else "root"
+        folder_name = "_".join(path_parts[-3:]) if len(path_parts) >= 3 else "_".join(path_parts) or "root"
 
         output_name = f"xhs_{folder_name}_{base_name}.pdf"
         output_path = os.path.join(output_dir, output_name)
 
-        # 避免重复
+        # 存在性检查
         if os.path.exists(output_path):
-            timestamp = datetime.now().strftime("%H%M%S")
-            output_name = f"{folder_name}_{base_name}_{timestamp}.pdf"
-            output_path = os.path.join(output_dir, output_name)
+            logging.info(f"文件已存在，跳过转换：{output_name}")
+            return False
 
         # 执行转换
-        converter = PDFConverter(compress_ratio=0.6, jpeg_quality=85)
+        converter = PDFConverter(compress_ratio=0.8, jpeg_quality=95)
         with open(txt_path, "rb") as f:
             text = f.read().decode('utf-8', errors='replace')
 
         converter.add_text(text)
-        converter.add_images(os.path.dirname(txt_path))
+        converter.add_images(txt_dir)
         converter.save(output_path)
 
         logging.info(f"转换成功：{output_name}")

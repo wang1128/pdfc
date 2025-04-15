@@ -5825,3 +5825,609 @@
 2025-04-14 23:08:11,859 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🌙' (\U0001f319), '🧘' (\U0001f9d8), '️' (\ufe0f), '✨' (\u2728), '🐠' (\U0001f420), '⃣' (\u20e3), '🪵' (\U0001fab5), '👉' (\U0001f449), '🐘' (\U0001f418), '🌼' (\U0001f33c), ... (and 4 others)
 2025-04-14 23:08:11,964 - INFO - 转换成功：xhs_脉轮瑜伽_阿连Alian_5ac7850b11be1042c016c5a7_🌙晚间30min阴瑜伽，治愈一整天的疲惫🧘‍♀️_67c79ff90000000009016e0e_detail.pdf
 2025-04-14 23:08:11,964 - INFO - 处理完成！共转换 60 个文件
+2025-04-15 11:50:48,245 - INFO - 转换成功：xhs_media_datas_爱画画的羊羊老师_5b89eb60f7e8b9046de15836_创意美术榴莲素材打印_673de9ff0000000007028805_detail.pdf
+2025-04-15 11:50:48,245 - INFO - 发现视频文件，跳过目录：初级入门瑜伽_6626640b00000000040185d8
+2025-04-15 11:50:48,418 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t), '️' (\ufe0f), '🌰' (\U0001f330), '🎃' (\U0001f383), '🌈' (\U0001f308), '🐷' (\U0001f437)
+2025-04-15 11:50:48,556 - INFO - 转换成功：xhs_面试考官视角解析_linlin职场咨询_6700b649000000001d033908_面试为什么会挂？（面试官视角+解法）_67da884a000000001c003be2_detail.pdf
+2025-04-15 11:50:48,558 - INFO - 发现视频文件，跳过目录：考官视角丨面试试讲你为什么会被扣分_67166b0c00000000260369eb
+2025-04-15 11:50:49,427 - INFO - 转换成功：xhs_面试考官视角解析_面仕官_65263556000000002a036e15_从考官视角解答面试过程中的问题_67b2d6450000000017039e8c_detail.pdf
+2025-04-15 11:50:49,427 - INFO - 发现视频文件，跳过目录：教资面试考官视角：哪些考生更容易通过❓_673dae6f00000000080057d7
+2025-04-15 11:50:49,427 - INFO - 发现视频文件，跳过目录：国考面试考官亲授经验，送给备考的同学们_67b7f35a000000000603c72c
+2025-04-15 11:50:49,995 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t), '️' (\ufe0f), '⃣' (\u20e3)
+2025-04-15 11:50:50,121 - INFO - 转换成功：xhs_面试考官视角解析_备课汉母_5b7e662c56b7e10001bd3e5d_考官视角聊聊，关于复试出题背后的秘密_67dc0e52000000001d014c98_detail.pdf
+2025-04-15 11:50:50,122 - INFO - 发现视频文件，跳过目录：考官视角看教资面试_660a2410000000001a015a14
+2025-04-15 11:50:50,364 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔓' (\U0001f513), '💕' (\U0001f495), '💖' (\U0001f496), '✅' (\u2705), '️' (\ufe0f), '⏩' (\u23e9)
+2025-04-15 11:50:50,445 - INFO - 转换成功：xhs_面试考官视角解析_知问教育_64ae653e000000002b009ab5_省考面试考官觉得...🔓小白适用_67f64f74000000001c02dd66_detail.pdf
+2025-04-15 11:50:50,737 - INFO - 转换成功：xhs_面试考官视角解析_闻道师兄隐于朝_5ca75c8500000000160375b1_从一个考官的视角看结构化面试如何得高分_6705e933000000001b0200d8_detail.pdf
+2025-04-15 11:50:50,984 - INFO - 转换成功：xhs_考公资料免费领取_蓝蓝_67cb12c4000000000e01ea37_26考公网盘无常no米自取（各名师的课都有_67f7a25f000000000f03b61a_detail.pdf
+2025-04-15 11:50:51,244 - INFO - 转换成功：xhs_考公资料免费领取_蓝蓝_67cb12c4000000000e01ea37_26考公网盘无常no米自取（各名师的课和_67ecd65a000000000b02c252_detail.pdf
+2025-04-15 11:50:51,492 - INFO - 转换成功：xhs_考公资料免费领取_爱学习的小师妹_67b58ae5000000000e01c6a0_2026国考省考资源无偿分享持续更新_67bd1f39000000000603f93c_detail.pdf
+2025-04-15 11:50:51,801 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔥' (\U0001f525), '✅' (\u2705), '💕' (\U0001f495)
+2025-04-15 11:50:51,897 - INFO - 转换成功：xhs_考公资料免费领取_穷鬼考公上岸_65de9fb2000000000b031b0f_国考省考真题汇总（含24，不全的免费更新）_66cd9cfa000000001f03fd4a_detail.pdf
+2025-04-15 11:50:52,234 - INFO - 转换成功：xhs_考公资料免费领取_程稷_67df52a10000000007000478_考公网站推荐9个_67efdb5a000000001c02d028_detail.pdf
+2025-04-15 11:50:52,534 - INFO - 转换成功：xhs_考公资料免费领取_康康学长_67f4943d000000000d009b5a_26考公网盘资料，no米，紫娶。_67f732db00000000070340a4_detail.pdf
+2025-04-15 11:50:52,742 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:50:52,828 - INFO - 转换成功：xhs_考公资料免费领取_康康学长_67f4943d000000000d009b5a_26考公网盘资料，给大家拿出来，no米_67f8c0e0000000001200e883_detail.pdf
+2025-04-15 11:50:52,829 - INFO - 发现视频文件，跳过目录：🇺🇸🇦🇺留学生都给我去做自媒体‼️_67c0a1a90000000029024a87
+2025-04-15 11:50:52,829 - INFO - 发现视频文件，跳过目录：ThingsYouSaid~完整版_671c7e8600000000240187bc
+2025-04-15 11:50:53,370 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔥' (\U0001f525), '💯' (\U0001f4af), '✅' (\u2705), '🤩' (\U0001f929), '﻿' (\ufeff)
+2025-04-15 11:50:53,468 - INFO - 转换成功：xhs_申论80分写作模板_不卷学姐申论版_66da676c000000000d024831_太好啦是万金油模板！申论有救啦！12个主题_6756680a0000000002014b85_detail.pdf
+2025-04-15 11:50:53,827 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🍙' (\U0001f359), '🌟' (\U0001f31f)
+2025-04-15 11:50:53,915 - INFO - 转换成功：xhs_申论80分写作模板_小新磕糖饭团子🍙_6779cdbe00000000180145ff_申請大作文万能模板！🌟🌟🌟_67c8f9e400000000070342db_detail.pdf
+2025-04-15 11:50:54,272 - INFO - 转换成功：xhs_申论80分写作模板_咩咩_5c6425e70000000010002a63_袁东申论公文写作模板_67cfba39000000002803c1e9_detail.pdf
+2025-04-15 11:50:54,595 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🟠' (\U0001f7e0), '✅' (\u2705)
+2025-04-15 11:50:54,711 - INFO - 转换成功：xhs_申论80分写作模板_苏苏考公咨询_664f147d000000000303322f_25考公！80分申论大作文模板！熬夜背！_674eddff000000000203ab58_detail.pdf
+2025-04-15 11:50:54,914 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:50:55,001 - INFO - 转换成功：xhs_申论80分写作模板_申论80分养成计划(申橘)_6684a31f000000000d026b00_申论思辨类大作文模板_674aab23000000000202c1ee_detail.pdf
+2025-04-15 11:50:55,263 - INFO - 转换成功：xhs_申论80分写作模板_申论80分养成计划(申橘)_6684a31f000000000d026b00_申论王炸开头结尾(一套模板走天下！)_671f33be0000000016021cef_detail.pdf
+2025-04-15 11:50:55,551 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:50:55,643 - INFO - 转换成功：xhs_申论80分写作模板_申论80分养成计划(申橘)_6684a31f000000000d026b00_最后两天！申论模板全文背诵(自用)_67d16cbd000000000302a30d_detail.pdf
+2025-04-15 11:50:56,006 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '❗' (\u2757), '🔥' (\U0001f525), '➕' (\u2795), '	' (\t)
+2025-04-15 11:50:56,104 - INFO - 转换成功：xhs_申论80分写作模板_程程公考上岸啦_65368d3400000000060058ef_去背吧❗申论模板大全80页，提分80%🔥_6735a569000000001b028783_detail.pdf
+2025-04-15 11:50:56,415 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔥' (\U0001f525), '✅' (\u2705), '﻿' (\ufeff)
+2025-04-15 11:50:56,514 - INFO - 转换成功：xhs_申论80分写作模板_程程公考上岸啦_65368d3400000000060058ef_袁东大作文纯背版来了！背完申论稳上80！_6750165f00000000060172c7_detail.pdf
+2025-04-15 11:50:56,710 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '❗' (\u2757), '🤯' (\U0001f92f), '😣' (\U0001f623), '😭' (\U0001f62d), '🎉' (\U0001f389), '✨' (\u2728)
+2025-04-15 11:50:56,805 - INFO - 转换成功：xhs_申论80分写作模板_程程公考上岸啦_65368d3400000000060058ef_申论：七天背完，80＋稳了❗❗❗_672c6a12000000001b02fb57_detail.pdf
+2025-04-15 11:50:57,253 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 11:50:57,337 - INFO - 转换成功：xhs_申论80分写作模板_无食桑葚_6743e8bc000000001d02ec8d_25年福建申论80分-大作文（种树）思路分享_67ee1924000000001d00892f_detail.pdf
+2025-04-15 11:50:57,848 - INFO - 转换成功：xhs_申论80分写作模板_尚瑾_67b6d54d000000000a03e874_申论万能模版，一天背完_67d27b22000000001c0038cc_detail.pdf
+2025-04-15 11:50:58,332 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 11:50:58,460 - INFO - 转换成功：xhs_申论80分写作模板_胡幺幺._64661d9c000000001f03258e_二十种常见公文写作格式汇总_67600e62000000000b021162_detail.pdf
+2025-04-15 11:50:58,658 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💅' (\U0001f485), '⃣' (\u20e3), '📝' (\U0001f4dd), '🎥' (\U0001f3a5), '📊' (\U0001f4ca), '✨' (\u2728), '💡' (\U0001f4a1)
+2025-04-15 11:50:58,767 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_《新公司要流水截图？三招教你优雅应对》_67c10aaf000000000e0044ad_detail.pdf
+2025-04-15 11:50:58,940 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🤯' (\U0001f92f), '😫' (\U0001f62b), '﻿' (\ufeff)
+2025-04-15 11:50:59,043 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_背调拿到offer，给我入职人事跟我要“礼”_67c933fc000000000b015782_detail.pdf
+2025-04-15 11:50:59,328 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_收到offer有空窗期，虚报了。怎么办？_67a4a55a000000001701d87e_detail.pdf
+2025-04-15 11:50:59,671 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_被背调个税截图和录屏，神器上线_67ea7aa5000000001e00b4a2_detail.pdf
+2025-04-15 11:50:59,869 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😫' (\U0001f62b), '🙈' (\U0001f648), '❗' (\u2757), '📋' (\U0001f4cb), '💥' (\U0001f4a5), '🔔' (\U0001f514), '💪' (\U0001f4aa), '﻿' (\ufeff)
+2025-04-15 11:50:59,975 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_太自信虚报薪资被HR求提供个税，我该怎么办_67bd2416000000000603ce49_detail.pdf
+2025-04-15 11:51:00,156 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🎉' (\U0001f389), '🤩' (\U0001f929), '🤦' (\U0001f926), '️' (\ufe0f), '⃣' (\u20e3), '🍁' (\U0001f341), '🍂' (\U0001f342), '👀' (\U0001f440), '👈' (\U0001f448)
+2025-04-15 11:51:00,250 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_虚报了，不用慌！个税截图有实用方法_67fb5c42000000001c00590c_detail.pdf
+2025-04-15 11:51:00,422 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:00,524 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_offer收到了，虚报了，有点害怕背调了_67aeb4f7000000001902e4f1_detail.pdf
+2025-04-15 11:51:00,707 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t), '﻿' (\ufeff)
+2025-04-15 11:51:00,817 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_到手的offer飞了，被背调了_67b810b8000000000603cd92_detail.pdf
+2025-04-15 11:51:01,001 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💅' (\U0001f485), '⃣' (\u20e3), '📝' (\U0001f4dd), '🎥' (\U0001f3a5), '📊' (\U0001f4ca), '✨' (\u2728), '💡' (\U0001f4a1)
+2025-04-15 11:51:01,114 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_入职新公司要提供个税截图及录屏咋办_67f37484000000001c00c718_detail.pdf
+2025-04-15 11:51:01,285 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👋' (\U0001f44b), '🎉' (\U0001f389), '😰' (\U0001f630), '🤔' (\U0001f914), '😭' (\U0001f62d), '😣' (\U0001f623), '💬' (\U0001f4ac), '😮' (\U0001f62e), '👌' (\U0001f44c), '❗' (\u2757), ... (and 2 others)
+2025-04-15 11:51:01,391 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_拿到offer入职了呀，结果公司要我交流水_67a570fc000000001902cf1a_detail.pdf
+2025-04-15 11:51:01,658 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_不是入职了，要背调我！个税截图正常提交吗_67a6c99500000000180054a6_detail.pdf
+2025-04-15 11:51:01,859 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😅' (\U0001f605), '✅' (\u2705), '️' (\ufe0f), '⃣' (\u20e3), '💔' (\U0001f494)
+2025-04-15 11:51:01,966 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_空窗期半年，需要个税截图及录屏的使用指南_67f730e6000000001d01e6fc_detail.pdf
+2025-04-15 11:51:02,258 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_不是入职了，我被背调了！要提供个税截图_67a95fbb000000001701d48e_detail.pdf
+2025-04-15 11:51:02,549 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_有空窗期和虚报了，要个税截图怎么办？_67ee1f99000000001b03e3be_detail.pdf
+2025-04-15 11:51:02,871 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_虚报了，谈薪资时要提供个税截图，别慌张_67d7c713000000000900e391_detail.pdf
+2025-04-15 11:51:03,290 - INFO - 转换成功：xhs_media_datas_一心榴莲_61613420000000000201df68_一心家才有的奶油金枕_672f1f1f000000001d03bd52_detail.pdf
+2025-04-15 11:51:03,446 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👏' (\U0001f44f)
+2025-04-15 11:51:03,537 - INFO - 转换成功：xhs_media_datas_一心榴莲_61613420000000000201df68_让我们恭喜榴莲肉单独出道了👏_67274e72000000001d03a67b_detail.pdf
+2025-04-15 11:51:03,537 - INFO - 发现视频文件，跳过目录：12分钟春季肝胆经疏通瑜伽改善瘀堵消水肿_67b5409f0000000029039880
+2025-04-15 11:51:03,801 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '⚠' (\u26a0), '️' (\ufe0f), '❗' (\u2757), '	' (\t), '❓' (\u2753), '⃣' (\u20e3), '❌' (\u274c), '💰' (\U0001f4b0)
+2025-04-15 11:51:03,903 - INFO - 转换成功：xhs_media_datas_Z卓意严选_6540884d000000000400a4cb_我去！60两盒榴莲？！_66bda843000000001e019cb9_detail.pdf
+2025-04-15 11:51:04,070 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '❗' (\u2757), '️' (\ufe0f), '	' (\t)
+2025-04-15 11:51:04,188 - INFO - 转换成功：xhs_省考乡村振兴案例_拿铁公考面试间_65452696000000000400a392_山东省考预测❗️乡村振兴相关案例_67c81f5f00000000060381ee_detail.pdf
+2025-04-15 11:51:04,813 - INFO - 转换成功：xhs_省考乡村振兴案例_文旅策划库_66e84d75000000000d025beb_乡村振兴8大成功案例！_670da4d70000000021007556_detail.pdf
+2025-04-15 11:51:05,032 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '❗' (\u2757), '️' (\ufe0f)
+2025-04-15 11:51:05,114 - INFO - 转换成功：xhs_省考乡村振兴案例_上岸小助手_673ed5d9000000001d02d1f4_3.15省考县乡卷必备乡村振兴类范文❗️_67ce79320000000007035f5a_detail.pdf
+2025-04-15 11:51:05,318 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 11:51:05,404 - INFO - 转换成功：xhs_省考乡村振兴案例_申论茶馆_67a1abeb000000000d00add1_省考倒计时8天！申论高分范文：乡村振兴_67ca9c5c000000000b0161b4_detail.pdf
+2025-04-15 11:51:05,618 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 11:51:05,701 - INFO - 转换成功：xhs_省考乡村振兴案例_落笔生Hua_65fd8c9b000000000b00c13e_3月6日人民日报文章精析——乡村振兴_67c8ff3c0000000029034825_detail.pdf
+2025-04-15 11:51:06,060 - INFO - 转换成功：xhs_media_datas_欢喜-_61f7760e000000001000fc6a_榴莲_674b27db000000000202f865_detail.pdf
+2025-04-15 11:51:06,428 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👀' (\U0001f440), '🎊' (\U0001f38a), '	' (\t), '🌟' (\U0001f31f), '💛' (\U0001f49b), '🍈' (\U0001f348), '🌿' (\U0001f33f), '🐱' (\U0001f431)
+2025-04-15 11:51:06,531 - INFO - 转换成功：xhs_media_datas_金凤壹号树熟榴莲_6409e5b50000000029011326_终于有线上店铺可以买到榴莲了！_67b6e064000000002a000c4a_detail.pdf
+2025-04-15 11:51:06,705 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '✨' (\u2728)
+2025-04-15 11:51:06,804 - INFO - 转换成功：xhs_事业单位备考攻略_阿粟一昭昭✨_5e299ead00000000010054fb_在职党事业编上岸计划，周末冲刺直接抄！_67c673ee000000000d014b7e_detail.pdf
+2025-04-15 11:51:06,961 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '✨' (\u2728)
+2025-04-15 11:51:07,056 - INFO - 转换成功：xhs_事业单位备考攻略_阿粟一昭昭✨_5e299ead00000000010054fb_被问爆的30天事业单位备考计划！冲刺＋避坑_67c51e66000000001203d039_detail.pdf
+2025-04-15 11:51:07,525 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👉' (\U0001f449)
+2025-04-15 11:51:07,612 - INFO - 转换成功：xhs_事业单位备考攻略_小马老师_5bbcaab318c19a0001519068_👉👉👉事业单位E类必看的备考攻略_67eb8c49000000000b01cdde_detail.pdf
+2025-04-15 11:51:07,612 - INFO - 发现视频文件，跳过目录：花生十三丨事业单位联考职测时间分配_67d9324e000000000d017382
+2025-04-15 11:51:08,227 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🗒' (\U0001f5d2), '	' (\t)
+2025-04-15 11:51:08,340 - INFO - 转换成功：xhs_事业单位备考攻略_困且不困（学习版_6596b14e000000001f03bd10_省考和事业单位双备考的超详细学习计划🗒_675575e4000000000102ae48_detail.pdf
+2025-04-15 11:51:08,584 - INFO - 转换成功：xhs_事业单位备考攻略_好运大人_653b57c30000000004009b12_一点没学？用一晚创造一个奇迹(事业编备考)_67e65b38000000000602a18f_detail.pdf
+2025-04-15 11:51:08,751 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t), '📚' (\U0001f4da)
+2025-04-15 11:51:08,858 - INFO - 转换成功：xhs_事业单位备考攻略_好运大人_653b57c30000000004009b12_事业编裸考大法，求求你学点吧_67dcd239000000000900e892_detail.pdf
+2025-04-15 11:51:09,220 - INFO - 转换成功：xhs_事业单位备考攻略_小妮子学姐_65d845da000000000401ec6a_Deepseek给出的1个月冲刺事业编联考计划_67c16807000000000d017706_detail.pdf
+2025-04-15 11:51:09,220 - INFO - 发现视频文件，跳过目录：言语如何做复盘_67f7bc90000000000e00489d
+2025-04-15 11:51:09,656 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🚗' (\U0001f697), '	' (\t)
+2025-04-15 11:51:09,793 - INFO - 转换成功：xhs_事业单位备考攻略_戴蒙的人生笔记🚗_613592a6000000000201aa73_27天极限考编第一名上岸，我是怎么做到的？_67e6c25b000000001d0246fe_detail.pdf
+2025-04-15 11:51:10,067 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '✅' (\u2705), '	' (\t), '﻿' (\ufeff)
+2025-04-15 11:51:10,153 - INFO - 转换成功：xhs_事业单位备考攻略_考编那些事_5b11418ae8ac2b27ed3bbca0_0基础从3月22日开始备考福建事业单位！_67dd22c20000000009014195_detail.pdf
+2025-04-15 11:51:10,345 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '﻿' (\ufeff)
+2025-04-15 11:51:10,428 - INFO - 转换成功：xhs_事业单位备考攻略_哈喽小仙女_6796db40000000000e01ebca_马克公基学习顺序丨25天速成版‼️_67f1bf56000000001e0008d2_detail.pdf
+2025-04-15 11:51:10,942 - INFO - 转换成功：xhs_事业单位备考攻略_A一杯奶茶_6483bea40000000025035035_15天极限过3.29事业单位A类（差生版）_67d1886c000000000d0146bb_detail.pdf
+2025-04-15 11:51:11,380 - INFO - 转换成功：xhs_事业单位备考攻略_福建事业单位备考_61a31d480000000010005b14_因为淋过雨，25考公人可以直接抄的备考攻略_66f289aa000000001902fac4_detail.pdf
+2025-04-15 11:51:11,998 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '📣' (\U0001f4e3), '🌷' (\U0001f337), '	' (\t), '️' (\ufe0f), '➕' (\u2795), '🙇' (\U0001f647)
+2025-04-15 11:51:12,114 - INFO - 转换成功：xhs_事业单位备考攻略_鲁鲁西！_646496f0000000001f0313fb_给仅剩25天考事业编D类的姐妹一个暗黑办法_67c86bf50000000009016c12_detail.pdf
+2025-04-15 11:51:12,306 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💁' (\U0001f481), '	' (\t), '🚨' (\U0001f6a8), '️' (\ufe0f), '⃣' (\u20e3), '⚠' (\u26a0), '✅' (\u2705), '👉' (\U0001f449), '👀' (\U0001f440), '🔥' (\U0001f525), ... (and 2 others)
+2025-04-15 11:51:12,432 - INFO - 转换成功：xhs_事业单位备考攻略_HT华图公考事业编考试_5f6203c5000000000101f6e6_3.15省考结束了，如何备战事业编？_67d7e72c000000000900dc24_detail.pdf
+2025-04-15 11:51:12,639 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🎯' (\U0001f3af), '🎈' (\U0001f388), '👏' (\U0001f44f), '😎' (\U0001f60e), '🤗' (\U0001f917), '🧐' (\U0001f9d0), '😜' (\U0001f61c), '👍' (\U0001f44d), '😃' (\U0001f603), '💪' (\U0001f4aa), ... (and 2 others)
+2025-04-15 11:51:12,751 - INFO - 转换成功：xhs_事业单位备考攻略_L学长（考公版）_5ca628f900000000120275d4_小破站堪称事业编备考的绝佳学习圣地_67af1698000000002602c0e1_detail.pdf
+2025-04-15 11:51:13,172 - INFO - 转换成功：xhs_事业单位备考攻略_L学长（考公版）_5ca628f900000000120275d4_事业单位联考最后15天，冲刺怎么学_67d77a38000000001d027c37_detail.pdf
+2025-04-15 11:51:13,714 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 11:51:13,802 - INFO - 转换成功：xhs_事业单位备考攻略_L学长（考公版）_5ca628f900000000120275d4_悄悄告诉你，综应a靠背这些上岸的_67be8035000000000e004300_detail.pdf
+2025-04-15 11:51:13,802 - INFO - 发现视频文件，跳过目录：自用考编资料分享！职测➕综应_67c57213000000000900e6b6
+2025-04-15 11:51:14,331 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💯' (\U0001f4af), '️' (\ufe0f), '	' (\t), '🌻' (\U0001f33b)
+2025-04-15 11:51:14,429 - INFO - 转换成功：xhs_事业单位备考攻略_锦跃教育咨询_64098e230000000029016100_2025公基笔记背诵💯无非这些知识点_674fb287000000000702b804_detail.pdf
+2025-04-15 11:51:14,812 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😱' (\U0001f631), '📢' (\U0001f4e2), '	' (\t), '️' (\ufe0f), '🌈' (\U0001f308)
+2025-04-15 11:51:14,910 - INFO - 转换成功：xhs_事业单位备考攻略_锦跃教育咨询_64098e230000000029016100_存下吧😱公基不用啃书，学霸笔记熬夜背_67c7ac45000000002803503c_detail.pdf
+2025-04-15 11:51:14,911 - INFO - 发现视频文件，跳过目录：救命篇｜手把手一篇教会怎么学职测‼️🆘_66ed8dfa00000000120139ba
+2025-04-15 11:51:14,911 - INFO - 发现视频文件，跳过目录：姐要考第一！！事业编高效备考🧚🏻‍♀️6h_67c44af1000000000602b683
+2025-04-15 11:51:14,911 - INFO - 发现视频文件，跳过目录：每天必练的六个瑜伽动作跟练版_64ed79da000000001f03ab3f
+2025-04-15 11:51:14,911 - INFO - 发现视频文件，跳过目录：每天必练的七个瑜伽动作（跟练版）_67230e8d000000001901541d
+2025-04-15 11:51:15,394 - INFO - 转换成功：xhs_考公心理调适方法_杨帆（督学版）_66dbf2f7000000001d022f2e_长期备考的心理调节经验_66ef7c8a000000001e01b929_detail.pdf
+2025-04-15 11:51:15,395 - INFO - 发现视频文件，跳过目录：每天都可以做的调整心情的几个小方法_675fd3ef000000000600fdb1
+2025-04-15 11:51:15,795 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👇' (\U0001f447), '🏻' (\U0001f3fb), '❗' (\u2757), '🙌' (\U0001f64c), '🙏' (\U0001f64f), '👩' (\U0001f469), '💻' (\U0001f4bb), '🤟' (\U0001f91f), '	' (\t), '👊' (\U0001f44a), ... (and 7 others)
+2025-04-15 11:51:15,935 - INFO - 转换成功：xhs_考公心理调适方法_在下煎饼大王_5fe19ce30000000001005290_行动是打败焦虑的最好方法_67bc52b200000000070340aa_detail.pdf
+2025-04-15 11:51:16,112 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:16,243 - INFO - 转换成功：xhs_考公心理调适方法_王哥不焦虑_66e28057000000000b031767_考公焦虑症的执念：必须把所有事情都想通_677df2e0000000002001f8f5_detail.pdf
+2025-04-15 11:51:16,572 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:16,657 - INFO - 转换成功：xhs_考公心理调适方法_银河系自习室天天姐姐_62a915ca000000001902b14c_利用焦虑的方法：杀老虎原则_67ebbc3d000000001d00bbd0_detail.pdf
+2025-04-15 11:51:16,820 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:16,970 - INFO - 转换成功：xhs_考公心理调适方法_已经上岸的小杨_65e85a30000000000500eb88_考公最难的从来不是考公本身，而是心态_67cc06690000000029032f03_detail.pdf
+2025-04-15 11:51:16,970 - INFO - 发现视频文件，跳过目录：公考面试心理按摩又来了_67ee623c000000000b02e967
+2025-04-15 11:51:16,971 - INFO - 发现视频文件，跳过目录：人民日报推荐的6个瑜伽动作_67de429c000000001201fec2
+2025-04-15 11:51:16,971 - INFO - 发现视频文件，跳过目录：阳光下的瑜伽晨练☀️给自己一个温暖的拥抱～_67e77f2f000000001c00273f
+2025-04-15 11:51:16,971 - INFO - 发现视频文件，跳过目录：8min，体态改善_66754727000000001d017d48
+2025-04-15 11:51:16,972 - INFO - 发现视频文件，跳过目录：2024年留学账号爆发，但能火的就只有这3种_65f2ea72000000000d00fe39
+2025-04-15 11:51:17,255 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '➕' (\u2795), '🌟' (\U0001f31f), '	' (\t)
+2025-04-15 11:51:17,350 - INFO - 转换成功：xhs_考公万能六项框架_小米姜姜酱_6546275a000000000d005515_万能大作文框架模版分享（小傻瓜式攻略）_67ccda7a000000000d014cd9_detail.pdf
+2025-04-15 11:51:17,713 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🎁' (\U0001f381), '🆓' (\U0001f193), '👗' (\U0001f457)
+2025-04-15 11:51:17,799 - INFO - 转换成功：xhs_考公万能六项框架_依依公考面试_666313ac000000000b031f9f_【结构化面试】5大题型答题思路全解析_6739c2b0000000001a01f8a9_detail.pdf
+2025-04-15 11:51:18,373 - INFO - 转换成功：xhs_考公万能六项框架_小原学姐（公考上岸版）_65b1cc4c000000000d03e41d_有用！怪不得别人公基一秒一个还全对！！_6778b6b2000000001300829b_detail.pdf
+2025-04-15 11:51:19,248 - INFO - 转换成功：xhs_考公万能六项框架_粉笔小媛子_63c7fdc40000000027035e4d_材料作文万能模板_670f28d700000000210057c6_detail.pdf
+2025-04-15 11:51:19,598 - INFO - 转换成功：xhs_考公万能六项框架_粉笔小媛子_63c7fdc40000000027035e4d_申论万能分类体系_6729e2150000000019017966_detail.pdf
+2025-04-15 11:51:20,016 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '⭕' (\u2b55), '💢' (\U0001f4a2), '﻿' (\ufeff)
+2025-04-15 11:51:20,109 - INFO - 转换成功：xhs_考公万能六项框架_大斌公考官方_5fadea6a00000000010003db_申论万能开头结尾集锦，必背！_67c7a862000000002802a36b_detail.pdf
+2025-04-15 11:51:20,109 - INFO - 发现视频文件，跳过目录：背100个俗套框架，不如花60分钟学会我1个月_66554c6b00000000140195e9
+2025-04-15 11:51:20,425 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔥' (\U0001f525), '🔺' (\U0001f53a), '🔸' (\U0001f538)
+2025-04-15 11:51:20,522 - INFO - 转换成功：xhs_考公万能六项框架_上岸村考公_645e3e51000000001400f1f2_省考结构化面试万能模版🔥高分框架来啦_657e8c55000000003801c452_detail.pdf
+2025-04-15 11:51:21,365 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🍋' (\U0001f34b), '📝' (\U0001f4dd)
+2025-04-15 11:51:21,456 - INFO - 转换成功：xhs_考公万能六项框架_Lemon🍋（25考公版）_622c366200000000210296c8_🍋面试手写框架笔记📝来啦！_67add0350000000018013df0_detail.pdf
+2025-04-15 11:51:22,306 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 11:51:22,393 - INFO - 转换成功：xhs_考公万能六项框架_乐乐的金饭碗_670356e1000000001d0307a5_结构化面试答题模版，90分只背5天！！！_6756432c00000000020154ef_detail.pdf
+2025-04-15 11:51:22,599 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '❗' (\u2757), '️' (\ufe0f)
+2025-04-15 11:51:22,683 - INFO - 转换成功：xhs_考公万能六项框架_燕麦小熊_642d376e0000000011020c94_再看一眼面试答题框架啊❗️❗️_66a3659b0000000005039df3_detail.pdf
+2025-04-15 11:51:22,978 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:23,059 - INFO - 转换成功：xhs_考公万能六项框架_Summer_67dbd68d000000000700320f_26考公还没计划的直接抄就可以！从4.15开始_67efd07e000000000e004aa4_detail.pdf
+2025-04-15 11:51:23,600 - INFO - 转换成功：xhs_考公万能六项框架_小布呆_66c0959b000000001d0219dc_老夏答题框架汇总_6769720b000000000b017181_detail.pdf
+2025-04-15 11:51:24,317 - INFO - 转换成功：xhs_考公万能六项框架_赵金木_5caf56050000000016019e32_行测从50+到70+的备考经验（后附思维导图）_663ccdc4000000001e03a95f_detail.pdf
+2025-04-15 11:51:24,670 - INFO - 转换成功：xhs_考公万能六项框架_小冉萌萌哒_5a9d55c3e8ac2b376f87ce31_写小说总有宝宝问我怎么扒框架_662dae32000000000103297a_detail.pdf
+2025-04-15 11:51:24,671 - INFO - 发现视频文件，跳过目录：考公人必看｜这个学申论的万能框架！超好用！_671b92e70000000021000877
+2025-04-15 11:51:25,249 - INFO - 转换成功：xhs_考公万能六项框架_银色山_61c67ba3000000001000a372_粉笔9802025省考行测+申论_66fce687000000001b023c19_detail.pdf
+2025-04-15 11:51:25,709 - INFO - 转换成功：xhs_考公万能六项框架_已上岸的桃子_5506f3fea46e9649eae648b3_公考事业编万能框架大合集，谁看谁上岸_64aa11a60000000010028906_detail.pdf
+2025-04-15 11:51:26,194 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '➕' (\u2795), '	' (\t)
+2025-04-15 11:51:26,296 - INFO - 转换成功：xhs_考公万能六项框架_发呆办主任_67a5eac1000000000e01102e_申论千万别裸考大作文速成指南（框架版）_67cd35a8000000000900c211_detail.pdf
+2025-04-15 11:51:26,547 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:26,636 - INFO - 转换成功：xhs_考公万能六项框架_经检验能成功_639762a70000000026004041_结构化面试框架笔记_667735a3000000001c0298f2_detail.pdf
+2025-04-15 11:51:26,919 - INFO - 转换成功：xhs_考公万能六项框架_不盟_5d2c501d000000001100a366_粉笔980-资料分析知识点框架_64d9d863000000000c036752_detail.pdf
+2025-04-15 11:51:27,308 - INFO - 转换成功：xhs_考公万能六项框架_freeeeeeme_597368595e87e7233f8e9bfd_行测思维导图（我自己总结的！_6649a390000000001401bbdd_detail.pdf
+2025-04-15 11:51:27,667 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:28,105 - INFO - 转换成功：xhs_考公万能六项框架_公考牟立志讲数资_66a52952000000000b0313d8_超大杯资料框架梳理2.0（挖空版）_67c9454d000000001201e22c_detail.pdf
+2025-04-15 11:51:28,881 - INFO - 转换成功：xhs_考公万能六项框架_公考牟立志讲数资_66a52952000000000b0313d8_超大杯框架梳理2.0_678295490000000017038cf6_detail.pdf
+2025-04-15 11:51:29,141 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:29,227 - INFO - 转换成功：xhs_考公万能六项框架_阿花花卷_6097a3b80000000001002de6_《面试版一张纸默写完所有答题框架》_65ae6e58000000002c0375c3_detail.pdf
+2025-04-15 11:51:29,228 - INFO - 发现视频文件，跳过目录：公务员面试万能答题框架_678e08b00000000018004833
+2025-04-15 11:51:29,558 - INFO - 转换成功：xhs_考公万能六项框架_小红薯67CC968E_67cbf2e1000000000e01d529_不夸张，省考面试我30秒就能写出来框架_67cbf532000000002a00f894_detail.pdf
+2025-04-15 11:51:29,981 - INFO - 转换成功：xhs_行测正确率提升技巧_风吹屁屁凉(不上岸一直凉)_614acfe8000000001f03622f_行测从55到76的突破之路_67892596000000001901e5da_detail.pdf
+2025-04-15 11:51:30,697 - INFO - 转换成功：xhs_行测正确率提升技巧_小潘吃维生素了吗_6389889b000000001f0159cd_国考行测81.2分经验贴_678f9e6e0000000018005e7c_detail.pdf
+2025-04-15 11:51:31,331 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🤩' (\U0001f929)
+2025-04-15 11:51:31,429 - INFO - 转换成功：xhs_行测正确率提升技巧_奇妙耶耶（考公版）_659509be000000001f03a66b_本人亲测，行测蒙题大法真的有用🤩_672d75500000000019017dbb_detail.pdf
+2025-04-15 11:51:31,742 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:31,835 - INFO - 转换成功：xhs_行测正确率提升技巧_爱学习的小糯米_6502b19d000000000201131e_行测81笨方法分享_67d1a3d3000000000d01616a_detail.pdf
+2025-04-15 11:51:32,367 - INFO - 转换成功：xhs_行测正确率提升技巧_.._602a960f000000000101f03e_言语理解自悟出的一个做题方法（一）_67c85366000000002902d3f6_detail.pdf
+2025-04-15 11:51:32,831 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '⃣' (\u20e3)
+2025-04-15 11:51:32,945 - INFO - 转换成功：xhs_行测正确率提升技巧_咕噜羊（无小号版）_66f5208f000000000b0304d6_行测从53到73（熬夜总结的经验)_67e4db52000000000b014b1a_detail.pdf
+2025-04-15 11:51:33,682 - INFO - 转换成功：xhs_行测正确率提升技巧_下次见我叫李局_659b525f000000001f03b829_言语理解正确率低于95%的，一定要看完这篇_67e3be40000000000603a64d_detail.pdf
+2025-04-15 11:51:34,307 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😭' (\U0001f62d)
+2025-04-15 11:51:34,404 - INFO - 转换成功：xhs_行测正确率提升技巧_ajack（上岸版）_667e510300000000030307b8_判断推理正确率50%——90%，经验分享_67e116f3000000001b0247ac_detail.pdf
+2025-04-15 11:51:34,837 - INFO - 转换成功：xhs_行测正确率提升技巧_ajack（上岸版）_667e510300000000030307b8_言语理解正确率95%，深度复盘_67de707d000000001e0049de_detail.pdf
+2025-04-15 11:51:35,408 - INFO - 转换成功：xhs_行测正确率提升技巧_ajack（上岸版）_667e510300000000030307b8_逻辑填空正确率60%——90%深度复盘_67e543af000000001d0274cf_detail.pdf
+2025-04-15 11:51:35,787 - INFO - 转换成功：xhs_行测正确率提升技巧_ajack（上岸版）_667e510300000000030307b8_个人认为行测提分最快的方法（野路子）_67d39622000000001b024ad5_detail.pdf
+2025-04-15 11:51:36,332 - INFO - 转换成功：xhs_行测正确率提升技巧_ajack（上岸版）_667e510300000000030307b8_行测从52到74，我只做了三点调整_67cadde2000000002a001177_detail.pdf
+2025-04-15 11:51:36,841 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f)
+2025-04-15 11:51:36,946 - INFO - 转换成功：xhs_行测正确率提升技巧_超韧150分_626e28ee000000001000a51a_行测从60分提升到74分我是如何做到的？_6687fe54000000000a02560d_detail.pdf
+2025-04-15 11:51:37,443 - INFO - 转换成功：xhs_行测正确率提升技巧_蜗牛别等我_62580f1300000000210232a6_国考150+经验贴（行测）_67cd96df00000000290331d2_detail.pdf
+2025-04-15 11:51:38,191 - INFO - 转换成功：xhs_行测正确率提升技巧_顺其自然_65f0025d000000000500f378_行测复盘方法_66cd62a4000000001d03a171_detail.pdf
+2025-04-15 11:51:38,443 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🐟' (\U0001f41f)
+2025-04-15 11:51:38,558 - INFO - 转换成功：xhs_行测正确率提升技巧_香菜鱼🐟_6533c95f000000000301c2ab_行测练习了半年多还是没提高，那是方法错了_6624798b000000000d032771_detail.pdf
+2025-04-15 11:51:39,560 - INFO - 转换成功：xhs_行测正确率提升技巧_礼早_614608bb000000000202617f_国考行测83.2干货经验分享_679ef7ff000000002a00d496_detail.pdf
+2025-04-15 11:51:40,048 - INFO - 转换成功：xhs_行测正确率提升技巧_唱唱反调_65e43c4b0000000005009962_行测各模块经验_678c87a20000000003020496_detail.pdf
+2025-04-15 11:51:40,326 - INFO - 转换成功：xhs_行测正确率提升技巧_莫等闲_62036f57000000001000dc3e_国考行测81.5经验分享（常识）_667107ff000000001c029ef3_detail.pdf
+2025-04-15 11:51:40,874 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🫐' (\U0001fad0)
+2025-04-15 11:51:40,998 - INFO - 转换成功：xhs_行测正确率提升技巧_还珠郭郭呗_5a6d6927e8ac2b2bff502e24_言语理解正确率80%，如何提升阅读速度？_666f1367000000001d01406a_detail.pdf
+2025-04-15 11:51:41,692 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:41,800 - INFO - 转换成功：xhs_行测正确率提升技巧_小胖橙学行测_66c97874000000000d024817_从行测50分到79分的万字的经验贴(实操版)_67924a1a00000000180125cd_detail.pdf
+2025-04-15 11:51:42,135 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '⃣' (\u20e3)
+2025-04-15 11:51:42,251 - INFO - 转换成功：xhs_行测正确率提升技巧_懒懒来了（上岸版）_5f6608c7000000000101ded7_进考场前，强烈建议再把行测知识串一遍‼️_67cb9e9c000000000903afc4_detail.pdf
+2025-04-15 11:51:42,713 - INFO - 转换成功：xhs_行测正确率提升技巧_九品小吏_5fffeae40000000001004dfc_刷了两万题，我建立了图形推理思维框架_665025e20000000015012834_detail.pdf
+2025-04-15 11:51:43,080 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:43,191 - INFO - 转换成功：xhs_行测正确率提升技巧_lucky_62da7181000000000303c390_行测题刷题一万不如用心复盘三天（技巧版）_67c54af6000000000302ad4e_detail.pdf
+2025-04-15 11:51:44,350 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:44,479 - INFO - 转换成功：xhs_行测正确率提升技巧_诗诗倒计时_5e15c6cc0000000001006323_行测大部分人都是从四五十分过来的吗？_67acaba5000000002602f5b4_detail.pdf
+2025-04-15 11:51:44,944 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔥' (\U0001f525), '📚' (\U0001f4da), '💪' (\U0001f4aa), '📌' (\U0001f4cc), '✅' (\u2705), '	' (\t), '📊' (\U0001f4ca), '🔹' (\U0001f539), '📖' (\U0001f4d6), '🤔' (\U0001f914), ... (and 5 others)
+2025-04-15 11:51:45,111 - INFO - 转换成功：xhs_行测正确率提升技巧_萨米学姐（上岸版）_64e0d081000000000100e92e_公考行测上岸经验这样学提分超快！🔥_67a7804800000000180046af_detail.pdf
+2025-04-15 11:51:45,111 - INFO - 发现视频文件，跳过目录：资料分析慢的来比你做10篇有意义，都是技巧_67b8418a0000000007036dfe
+2025-04-15 11:51:45,464 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🥰' (\U0001f970), '💪' (\U0001f4aa), '⃣' (\u20e3), '🤗' (\U0001f917), '🥳' (\U0001f973), '😎' (\U0001f60e)
+2025-04-15 11:51:45,592 - INFO - 转换成功：xhs_media_datas_别开水果店_5fcadd2b0000000001004d7c_教你挑榴莲_6631e2a0000000001e0396f9_detail.pdf
+2025-04-15 11:51:45,592 - INFO - 发现视频文件，跳过目录：田大叔直播间100多能买多少榴莲！_6725bf14000000001d03b97c
+2025-04-15 11:51:45,593 - INFO - 发现视频文件，跳过目录：留学已经大众化_67107f07000000002401b761
+2025-04-15 11:51:45,593 - INFO - 发现视频文件，跳过目录：第314道菜无水蔬菜汤🥬这才叫原汁原味_67d8ed2900000000030293cc
+2025-04-15 11:51:45,594 - INFO - 发现视频文件，跳过目录：食草族食谱！芝麻菠菜金针菇｜水润清爽！！_67da5eac000000001d01ec78
+2025-04-15 11:51:45,594 - INFO - 发现视频文件，跳过目录：🫐11｜吃干净漂亮的食物完成高能量体质_66f2c5e8000000001902fc57
+2025-04-15 11:51:45,594 - INFO - 发现视频文件，跳过目录：节后大餐补救❗️清肠刮油“小绿汁”🥬_67a211c1000000002903401f
+2025-04-15 11:51:45,595 - INFO - 发现视频文件，跳过目录：🌽比饭店还好喝的奶香玉米汁❗️_67d03bc7000000001203c58f
+2025-04-15 11:51:45,595 - INFO - 发现视频文件，跳过目录：不加一滴水❗️原汁原味无水鸡肉时蔬煲❗️_677651ae000000000b014401
+2025-04-15 11:51:46,076 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t), '🌟' (\U0001f31f), '🧑' (\U0001f9d1), '🍳' (\U0001f373), '⃣' (\u20e3), '️' (\ufe0f), '🌈' (\U0001f308)
+2025-04-15 11:51:46,198 - INFO - 转换成功：xhs_宝宝食谱_紫旭妈妈_63120bf40000000012003f3a_12m+辅食｜鸡蛋抱豆腐鲜香爽滑巨巨费米饭_640934a800000000130163c0_detail.pdf
+2025-04-15 11:51:46,744 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '✅' (\u2705), '📝' (\U0001f4dd), '➕' (\u2795), '🔍' (\U0001f50d), '🔸' (\U0001f538)
+2025-04-15 11:51:46,855 - INFO - 转换成功：xhs_宝宝食谱_小可乐的日食记_5a6bd3104eacab4db462e098_1岁+宝宝辅食快手午晚餐搭配✅简单营养_6704e51b000000001b0216be_detail.pdf
+2025-04-15 11:51:47,757 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '👀' (\U0001f440), '⃣' (\u20e3), '🍗' (\U0001f357), '🔟' (\U0001f51f), '👨' (\U0001f468), '🏻' (\U0001f3fb), '🍳' (\U0001f373), '	' (\t)
+2025-04-15 11:51:47,867 - INFO - 转换成功：xhs_宝宝食谱_米诺妈妈_5c471d2e0000000010035a13_16款宝宝营养蒸菜合集‼️原汁原味.清淡健康_666c01b5000000001c020030_detail.pdf
+2025-04-15 11:51:48,724 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '⃣' (\u20e3), '🔟' (\U0001f51f), '👨' (\U0001f468), '🏻' (\U0001f3fb), '🍳' (\U0001f373), '	' (\t)
+2025-04-15 11:51:48,840 - INFO - 转换成功：xhs_宝宝食谱_米诺妈妈_5c471d2e0000000010035a13_10M+辅食12款小饼合集‼️鲜香软嫩.手指食物_658a913700000000120096f3_detail.pdf
+2025-04-15 11:51:49,387 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😋' (\U0001f60b), '🌈' (\U0001f308), '🍡' (\U0001f361), '️' (\ufe0f), '🛒' (\U0001f6d2), '✅' (\u2705), '🧑' (\U0001f9d1), '🍳' (\U0001f373), '⃣' (\u20e3)
+2025-04-15 11:51:49,525 - INFO - 转换成功：xhs_宝宝食谱_祐祐家简生活_599a699e82ec3955d180d029_宝宝版里脊小肉串｜外焦里嫩一定不能错过😋_664864720000000016012c01_detail.pdf
+2025-04-15 11:51:50,550 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '⃣' (\u20e3), '️' (\ufe0f), '🌈' (\U0001f308), '	' (\t), '🍎' (\U0001f34e), '🍌' (\U0001f34c), '🍒' (\U0001f352), '🎃' (\U0001f383), '🫐' (\U0001fad0), '🍠' (\U0001f360), ... (and 5 others)
+2025-04-15 11:51:50,680 - INFO - 转换成功：xhs_宝宝食谱_叶子辅食记_5ec5f75d0000000001004794_12款宝宝0⃣️失败手指食物合集营养又美味～_66b45054000000001e01ea75_detail.pdf
+2025-04-15 11:51:51,478 - INFO - 转换成功：xhs_宝宝食谱_狗哥和虎弟_63bfac7a0000000027034a47_12道宝宝追高常吃的菜做法，拿本本记下来_67a72326000000001902e5bb_detail.pdf
+2025-04-15 11:51:51,780 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '‮' (\u202e), '‬' (\u202c), '❗' (\u2757), '👉' (\U0001f449), '👍' (\U0001f44d), '👇' (\U0001f447), '	' (\t), '📝' (\U0001f4dd), '⃣' (\u20e3), '🍎' (\U0001f34e), ... (and 8 others)
+2025-04-15 11:51:51,927 - INFO - 转换成功：xhs_宝宝食谱_暄暄妈妈_64b4e8fe000000002b00bd2a_调理脾‮有胃‬顺序❗千‮要万‬搞清楚👉附食谱_679f5d410000000018018f46_detail.pdf
+2025-04-15 11:51:52,516 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👶' (\U0001f476), '🌟' (\U0001f31f), '😋' (\U0001f60b), '🧑' (\U0001f9d1), '🍳' (\U0001f373), '⚠' (\u26a0), '️' (\ufe0f), '🔸' (\U0001f538)
+2025-04-15 11:51:52,617 - INFO - 转换成功：xhs_宝宝食谱_是雯雯吖_5a0e5b1711be10276e4dac56_👶宝宝营养辅食粥🌟健脾养胃、补铁补锌_65e06f1c000000000b00e2c8_detail.pdf
+2025-04-15 11:51:53,603 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '✅' (\u2705), '	' (\t), '⃣' (\u20e3), '🔟' (\U0001f51f), '🧂' (\U0001f9c2)
+2025-04-15 11:51:53,712 - INFO - 转换成功：xhs_宝宝食谱_哈哈麻麻_586102956a6a6951e90792d7_24款家常蒸菜大合集‼️营养健康✅好吃不上火_67b32066000000002903c5d7_detail.pdf
+2025-04-15 11:51:54,368 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '➕' (\u2795), '✅' (\u2705), '⃣' (\u20e3)
+2025-04-15 11:51:54,498 - INFO - 转换成功：xhs_宝宝食谱_米拉麻麻_626e731b0000000021029283_宝宝一周午餐营养搭配不重样简单快手_668e0ea600000000250163f3_detail.pdf
+2025-04-15 11:51:54,878 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💯' (\U0001f4af)
+2025-04-15 11:51:54,971 - INFO - 转换成功：xhs_宝宝食谱_默默妈妈_63536889000000001802b820_健脾养胃的山药芙蓉羹｜做法简单营养美味💯_67ade12e000000001801a05a_detail.pdf
+2025-04-15 11:51:55,380 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '🛒' (\U0001f6d2), '🌈' (\U0001f308), '⚠' (\u26a0), '🤭' (\U0001f92d), '📢' (\U0001f4e2)
+2025-04-15 11:51:55,477 - INFO - 转换成功：xhs_宝宝食谱_热乎乎的夏天。_5b37602b4eacab0c893eaa47_不会和面也能做的鲜肉锅盔‼️一口掉渣嘎嘎香_667f8937000000001c021d3c_detail.pdf
+2025-04-15 11:51:55,966 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🌱' (\U0001f331), '🌞' (\U0001f31e), '️' (\ufe0f), '⃣' (\u20e3), '✅' (\u2705), '⚠' (\u26a0)
+2025-04-15 11:51:56,062 - INFO - 转换成功：xhs_宝宝食谱_小时光🌱_62c7ebf80000000002000ae7_一岁+宝宝辅食下饭菜！_66926ecf0000000025003980_detail.pdf
+2025-04-15 11:51:56,461 - INFO - 转换成功：xhs_宝宝食谱_韬子生活日记_5d22d78c000000001202cbbb_无标题_67c47ea20000000029039e74_detail.pdf
+2025-04-15 11:51:56,762 - INFO - 转换成功：xhs_user_5f08450b000000000101dc15_momo_5f08450b000000000101dc15_家教老师的命也是命_67f24ecd000000000b02e6ae_detail.pdf
+2025-04-15 11:51:56,763 - INFO - 发现视频文件，跳过目录：金枕榴莲之梦中情莲视频纯享版3.0_67588f19000000000603e5bf
+2025-04-15 11:51:56,763 - INFO - 发现视频文件，跳过目录：有门就能练每天跟我练3遍老阿姨变小姐姐_665091c300000000140181fc
+2025-04-15 11:51:56,764 - INFO - 发现视频文件，跳过目录：南师讲三脉七轮（下）_67054551000000002c02dc5b
+2025-04-15 11:51:56,764 - INFO - 发现视频文件，跳过目录：🌙晚间30min阴瑜伽，治愈一整天的疲惫🧘‍♀️_67c79ff90000000009016e0e
+2025-04-15 11:51:57,000 - INFO - 转换成功：xhs_公考网课对比测评_每天都很饿_5bc1a04ab1da140f62e28585_刘文超老师，你是我的神_67f0037f000000001c0326ee_detail.pdf
+2025-04-15 11:51:57,449 - INFO - 转换成功：xhs_公考网课对比测评_国考头子_64dba9ef000000000100dd2f_考公最强名师推荐_671cde06000000002100a106_detail.pdf
+2025-04-15 11:51:57,797 - INFO - 转换成功：xhs_公考网课对比测评_尽思量_67a9a51c000000000e0132f6_事业编网课测评，一次说明白_67ea37b9000000000f030caf_detail.pdf
+2025-04-15 11:51:58,111 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '📚' (\U0001f4da), '️' (\ufe0f), '⃣' (\u20e3), '⚠' (\u26a0), '💡' (\U0001f4a1), '📌' (\U0001f4cc), '🌟' (\U0001f31f), '👇' (\U0001f447)
+2025-04-15 11:51:58,226 - INFO - 转换成功：xhs_公考网课对比测评_张张考资_634fbb0a000000001802e4af_老夏vs小马哥，谁才是你的考公面试上岸CP？_67ad2db10000000028036178_detail.pdf
+2025-04-15 11:51:58,498 - INFO - 转换成功：xhs_公考网课对比测评_陪老公上岸！_5cea5dbc000000001700394c_数量关系哪家强_67f8b51c000000001c0090fa_detail.pdf
+2025-04-15 11:51:58,645 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💢' (\U0001f4a2), '😔' (\U0001f614), '	' (\t)
+2025-04-15 11:51:58,734 - INFO - 转换成功：xhs_公考网课对比测评_与编同眠_64ac095b000000000a022de7_为什么公考老师每节课的时间越来越长？_6783de7a000000002001f944_detail.pdf
+2025-04-15 11:51:59,002 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:59,107 - INFO - 转换成功：xhs_公考网课对比测评_开心锅包肉_66d06a72000000001d020d27_我宣布！这些老师才是考公的YYDS！_676bed8a000000000b020824_detail.pdf
+2025-04-15 11:51:59,356 - INFO - 转换成功：xhs_公考网课对比测评_Www.com_6624630e000000000b03124f_公基网课测评（个人观点）_67f9baab000000001d016151_detail.pdf
+2025-04-15 11:51:59,357 - INFO - 发现视频文件，跳过目录：你的考公，很可能毁于网课_674a23f50000000002029388
+2025-04-15 11:51:59,596 - INFO - 转换成功：xhs_公考网课对比测评_祝大家天天开心_63aee594000000002702b92e_考公和法考最大的区别_67c2834a00000000290386fd_detail.pdf
+2025-04-15 11:51:59,829 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:51:59,942 - INFO - 转换成功：xhs_公考网课对比测评_文澜上岸书店_63522a7d0000000012026c60_25公务员面试老夏和小马哥1980该选谁？_67552061000000000603c604_detail.pdf
+2025-04-15 11:52:00,542 - INFO - 转换成功：xhs_公考网课对比测评_藏在薰衣草巷_672c6ed2000000001c01b9c7_考公小白行测申论看那个老师老师网课推荐_676a82a7000000000b016f61_detail.pdf
+2025-04-15 11:52:01,155 - INFO - 转换成功：xhs_考公作息时间表_流浪进入森林_653fa2e20000000002013f3c_在职考公时间安排（无痛版）_67f625b4000000000f03364d_detail.pdf
+2025-04-15 11:52:01,437 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💪' (\U0001f4aa), '🌞' (\U0001f31e), '📚' (\U0001f4da), '🍽' (\U0001f37d), '️' (\ufe0f), '📝' (\U0001f4dd), '🌙' (\U0001f319), '🌛' (\U0001f31b), '📌' (\U0001f4cc), '💡' (\U0001f4a1), ... (and 1 others)
+2025-04-15 11:52:01,562 - INFO - 转换成功：xhs_考公作息时间表_王子子_5f8723d50000000001001c72_考公人专属作息表高效备考，一战上岸！_67a5d71b0000000018004d49_detail.pdf
+2025-04-15 11:52:01,768 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😘' (\U0001f618), '👉' (\U0001f449), '🌈' (\U0001f308)
+2025-04-15 11:52:01,861 - INFO - 转换成功：xhs_考公作息时间表_良良要上岸_664f18a50000000007007fa0_就这么学！全职考公无痛作息表来啦！_66b1e6a5000000001e01eba8_detail.pdf
+2025-04-15 11:52:02,035 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '⏰' (\u23f0), '⏳' (\u23f3), '️' (\ufe0f), '⃣' (\u20e3), '﻿' (\ufeff)
+2025-04-15 11:52:02,166 - INFO - 转换成功：xhs_考公作息时间表_欧尼_62aad864000000001902b2a8_在职考公没时间？分享我的学法_67dbcb57000000000603d9b0_detail.pdf
+2025-04-15 11:52:02,418 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 11:52:02,503 - INFO - 转换成功：xhs_考公作息时间表_晓晓公考老师_5f36510000000000010001e6_4月才开始26考公的，上岸计划表直接抄！！_67d8db5a000000000302af27_detail.pdf
+2025-04-15 11:52:02,819 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:52:02,952 - INFO - 转换成功：xhs_考公作息时间表_滴滴哒哒嘀_6499b12e000000001001cf1f_四月在职考公作息表月计划表日计划表_67ed0e3c000000001e0029d3_detail.pdf
+2025-04-15 11:52:03,165 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😏' (\U0001f60f), '📚' (\U0001f4da), '💯' (\U0001f4af)
+2025-04-15 11:52:03,317 - INFO - 转换成功：xhs_考公作息时间表_芝士兔_674d15fc00000000010026a5_我宣布这是考公最舒服的作息表😏_67a6edc1000000001701de51_detail.pdf
+2025-04-15 11:52:03,601 - INFO - 转换成功：xhs_考公作息时间表_啦啦啦_6671093b00000000070063cc_用高中作息的方法去坚持考公_67b2e11400000000180063ad_detail.pdf
+2025-04-15 11:52:03,743 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💜' (\U0001f49c), '📍' (\U0001f4cd), '⏰' (\u23f0), '🕰' (\U0001f570), '💡' (\U0001f4a1)
+2025-04-15 11:52:03,877 - INFO - 转换成功：xhs_考公作息时间表_moon_62f8cb36000000001f0165e4_我发现了在职考公最舒服的作息状态_67beea570000000028037038_detail.pdf
+2025-04-15 11:52:04,096 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 11:52:04,190 - INFO - 转换成功：xhs_考公作息时间表_嘟嘟_618e2f67000000002102542c_01年体制内｜上岸作息表分享_670f3055000000001b010933_detail.pdf
+2025-04-15 11:52:04,544 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f)
+2025-04-15 11:52:04,626 - INFO - 转换成功：xhs_考公作息时间表_考公小灵通~_65fd6b67000000000b030251_考公无痛作息状态，下一个上岸的就是你‼️_66a8bce50000000005030989_detail.pdf
+2025-04-15 11:52:04,626 - INFO - 处理完成！共转换 164 个文件
+2025-04-15 12:05:44,473 - INFO - 转换成功：xhs_media_datas_爱画画的羊羊老师_5b89eb60f7e8b9046de15836_创意美术榴莲素材打印_673de9ff0000000007028805_detail.pdf
+2025-04-15 12:05:44,482 - INFO - 发现视频文件，跳过目录：初级入门瑜伽_6626640b00000000040185d8
+2025-04-15 12:05:44,667 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t), '️' (\ufe0f), '🌰' (\U0001f330), '🎃' (\U0001f383), '🌈' (\U0001f308), '🐷' (\U0001f437)
+2025-04-15 12:05:44,801 - INFO - 转换成功：xhs_面试考官视角解析_linlin职场咨询_6700b649000000001d033908_面试为什么会挂？（面试官视角+解法）_67da884a000000001c003be2_detail.pdf
+2025-04-15 12:05:44,802 - INFO - 发现视频文件，跳过目录：考官视角丨面试试讲你为什么会被扣分_67166b0c00000000260369eb
+2025-04-15 12:05:45,442 - INFO - 转换成功：xhs_面试考官视角解析_面仕官_65263556000000002a036e15_从考官视角解答面试过程中的问题_67b2d6450000000017039e8c_detail.pdf
+2025-04-15 12:05:45,443 - INFO - 发现视频文件，跳过目录：教资面试考官视角：哪些考生更容易通过❓_673dae6f00000000080057d7
+2025-04-15 12:05:45,444 - INFO - 发现视频文件，跳过目录：国考面试考官亲授经验，送给备考的同学们_67b7f35a000000000603c72c
+2025-04-15 12:05:46,090 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t), '️' (\ufe0f), '⃣' (\u20e3)
+2025-04-15 12:05:46,217 - INFO - 转换成功：xhs_面试考官视角解析_备课汉母_5b7e662c56b7e10001bd3e5d_考官视角聊聊，关于复试出题背后的秘密_67dc0e52000000001d014c98_detail.pdf
+2025-04-15 12:05:46,217 - INFO - 发现视频文件，跳过目录：考官视角看教资面试_660a2410000000001a015a14
+2025-04-15 12:05:46,486 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔓' (\U0001f513), '💕' (\U0001f495), '💖' (\U0001f496), '✅' (\u2705), '️' (\ufe0f), '⏩' (\u23e9)
+2025-04-15 12:05:46,568 - INFO - 转换成功：xhs_面试考官视角解析_知问教育_64ae653e000000002b009ab5_省考面试考官觉得...🔓小白适用_67f64f74000000001c02dd66_detail.pdf
+2025-04-15 12:05:46,879 - INFO - 转换成功：xhs_面试考官视角解析_闻道师兄隐于朝_5ca75c8500000000160375b1_从一个考官的视角看结构化面试如何得高分_6705e933000000001b0200d8_detail.pdf
+2025-04-15 12:05:47,143 - INFO - 转换成功：xhs_考公资料免费领取_蓝蓝_67cb12c4000000000e01ea37_26考公网盘无常no米自取（各名师的课都有_67f7a25f000000000f03b61a_detail.pdf
+2025-04-15 12:05:47,398 - INFO - 转换成功：xhs_考公资料免费领取_蓝蓝_67cb12c4000000000e01ea37_26考公网盘无常no米自取（各名师的课和_67ecd65a000000000b02c252_detail.pdf
+2025-04-15 12:05:47,633 - INFO - 转换成功：xhs_考公资料免费领取_爱学习的小师妹_67b58ae5000000000e01c6a0_2026国考省考资源无偿分享持续更新_67bd1f39000000000603f93c_detail.pdf
+2025-04-15 12:05:47,996 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔥' (\U0001f525), '✅' (\u2705), '💕' (\U0001f495)
+2025-04-15 12:05:48,084 - INFO - 转换成功：xhs_考公资料免费领取_穷鬼考公上岸_65de9fb2000000000b031b0f_国考省考真题汇总（含24，不全的免费更新）_66cd9cfa000000001f03fd4a_detail.pdf
+2025-04-15 12:05:48,467 - INFO - 转换成功：xhs_考公资料免费领取_程稷_67df52a10000000007000478_考公网站推荐9个_67efdb5a000000001c02d028_detail.pdf
+2025-04-15 12:05:48,806 - INFO - 转换成功：xhs_考公资料免费领取_康康学长_67f4943d000000000d009b5a_26考公网盘资料，no米，紫娶。_67f732db00000000070340a4_detail.pdf
+2025-04-15 12:05:49,050 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:05:49,148 - INFO - 转换成功：xhs_考公资料免费领取_康康学长_67f4943d000000000d009b5a_26考公网盘资料，给大家拿出来，no米_67f8c0e0000000001200e883_detail.pdf
+2025-04-15 12:05:49,149 - INFO - 发现视频文件，跳过目录：🇺🇸🇦🇺留学生都给我去做自媒体‼️_67c0a1a90000000029024a87
+2025-04-15 12:05:49,149 - INFO - 发现视频文件，跳过目录：ThingsYouSaid~完整版_671c7e8600000000240187bc
+2025-04-15 12:05:49,836 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔥' (\U0001f525), '💯' (\U0001f4af), '✅' (\u2705), '🤩' (\U0001f929), '﻿' (\ufeff)
+2025-04-15 12:05:49,940 - INFO - 转换成功：xhs_申论80分写作模板_不卷学姐申论版_66da676c000000000d024831_太好啦是万金油模板！申论有救啦！12个主题_6756680a0000000002014b85_detail.pdf
+2025-04-15 12:05:50,345 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🍙' (\U0001f359), '🌟' (\U0001f31f)
+2025-04-15 12:05:50,433 - INFO - 转换成功：xhs_申论80分写作模板_小新磕糖饭团子🍙_6779cdbe00000000180145ff_申請大作文万能模板！🌟🌟🌟_67c8f9e400000000070342db_detail.pdf
+2025-04-15 12:05:50,821 - INFO - 转换成功：xhs_申论80分写作模板_咩咩_5c6425e70000000010002a63_袁东申论公文写作模板_67cfba39000000002803c1e9_detail.pdf
+2025-04-15 12:05:51,185 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🟠' (\U0001f7e0), '✅' (\u2705)
+2025-04-15 12:05:51,328 - INFO - 转换成功：xhs_申论80分写作模板_苏苏考公咨询_664f147d000000000303322f_25考公！80分申论大作文模板！熬夜背！_674eddff000000000203ab58_detail.pdf
+2025-04-15 12:05:51,598 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:05:51,689 - INFO - 转换成功：xhs_申论80分写作模板_申论80分养成计划(申橘)_6684a31f000000000d026b00_申论思辨类大作文模板_674aab23000000000202c1ee_detail.pdf
+2025-04-15 12:05:51,969 - INFO - 转换成功：xhs_申论80分写作模板_申论80分养成计划(申橘)_6684a31f000000000d026b00_申论王炸开头结尾(一套模板走天下！)_671f33be0000000016021cef_detail.pdf
+2025-04-15 12:05:52,302 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:05:52,395 - INFO - 转换成功：xhs_申论80分写作模板_申论80分养成计划(申橘)_6684a31f000000000d026b00_最后两天！申论模板全文背诵(自用)_67d16cbd000000000302a30d_detail.pdf
+2025-04-15 12:05:52,809 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '❗' (\u2757), '🔥' (\U0001f525), '➕' (\u2795), '	' (\t)
+2025-04-15 12:05:52,906 - INFO - 转换成功：xhs_申论80分写作模板_程程公考上岸啦_65368d3400000000060058ef_去背吧❗申论模板大全80页，提分80%🔥_6735a569000000001b028783_detail.pdf
+2025-04-15 12:05:53,253 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔥' (\U0001f525), '✅' (\u2705), '﻿' (\ufeff)
+2025-04-15 12:05:53,351 - INFO - 转换成功：xhs_申论80分写作模板_程程公考上岸啦_65368d3400000000060058ef_袁东大作文纯背版来了！背完申论稳上80！_6750165f00000000060172c7_detail.pdf
+2025-04-15 12:05:53,567 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '❗' (\u2757), '🤯' (\U0001f92f), '😣' (\U0001f623), '😭' (\U0001f62d), '🎉' (\U0001f389), '✨' (\u2728)
+2025-04-15 12:05:53,658 - INFO - 转换成功：xhs_申论80分写作模板_程程公考上岸啦_65368d3400000000060058ef_申论：七天背完，80＋稳了❗❗❗_672c6a12000000001b02fb57_detail.pdf
+2025-04-15 12:05:54,209 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 12:05:54,295 - INFO - 转换成功：xhs_申论80分写作模板_无食桑葚_6743e8bc000000001d02ec8d_25年福建申论80分-大作文（种树）思路分享_67ee1924000000001d00892f_detail.pdf
+2025-04-15 12:05:54,906 - INFO - 转换成功：xhs_申论80分写作模板_尚瑾_67b6d54d000000000a03e874_申论万能模版，一天背完_67d27b22000000001c0038cc_detail.pdf
+2025-04-15 12:05:55,459 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 12:05:55,559 - INFO - 转换成功：xhs_申论80分写作模板_胡幺幺._64661d9c000000001f03258e_二十种常见公文写作格式汇总_67600e62000000000b021162_detail.pdf
+2025-04-15 12:05:55,767 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💅' (\U0001f485), '⃣' (\u20e3), '📝' (\U0001f4dd), '🎥' (\U0001f3a5), '📊' (\U0001f4ca), '✨' (\u2728), '💡' (\U0001f4a1)
+2025-04-15 12:05:55,883 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_《新公司要流水截图？三招教你优雅应对》_67c10aaf000000000e0044ad_detail.pdf
+2025-04-15 12:05:56,078 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🤯' (\U0001f92f), '😫' (\U0001f62b), '﻿' (\ufeff)
+2025-04-15 12:05:56,179 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_背调拿到offer，给我入职人事跟我要“礼”_67c933fc000000000b015782_detail.pdf
+2025-04-15 12:05:56,475 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_收到offer有空窗期，虚报了。怎么办？_67a4a55a000000001701d87e_detail.pdf
+2025-04-15 12:05:56,828 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_被背调个税截图和录屏，神器上线_67ea7aa5000000001e00b4a2_detail.pdf
+2025-04-15 12:05:57,015 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😫' (\U0001f62b), '🙈' (\U0001f648), '❗' (\u2757), '📋' (\U0001f4cb), '💥' (\U0001f4a5), '🔔' (\U0001f514), '💪' (\U0001f4aa), '﻿' (\ufeff)
+2025-04-15 12:05:57,122 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_太自信虚报薪资被HR求提供个税，我该怎么办_67bd2416000000000603ce49_detail.pdf
+2025-04-15 12:05:57,316 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🎉' (\U0001f389), '🤩' (\U0001f929), '🤦' (\U0001f926), '️' (\ufe0f), '⃣' (\u20e3), '🍁' (\U0001f341), '🍂' (\U0001f342), '👀' (\U0001f440), '👈' (\U0001f448)
+2025-04-15 12:05:57,414 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_虚报了，不用慌！个税截图有实用方法_67fb5c42000000001c00590c_detail.pdf
+2025-04-15 12:05:57,602 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:05:57,701 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_offer收到了，虚报了，有点害怕背调了_67aeb4f7000000001902e4f1_detail.pdf
+2025-04-15 12:05:57,904 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t), '﻿' (\ufeff)
+2025-04-15 12:05:58,009 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_到手的offer飞了，被背调了_67b810b8000000000603cd92_detail.pdf
+2025-04-15 12:05:58,205 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💅' (\U0001f485), '⃣' (\u20e3), '📝' (\U0001f4dd), '🎥' (\U0001f3a5), '📊' (\U0001f4ca), '✨' (\u2728), '💡' (\U0001f4a1)
+2025-04-15 12:05:58,314 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_入职新公司要提供个税截图及录屏咋办_67f37484000000001c00c718_detail.pdf
+2025-04-15 12:05:58,523 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👋' (\U0001f44b), '🎉' (\U0001f389), '😰' (\U0001f630), '🤔' (\U0001f914), '😭' (\U0001f62d), '😣' (\U0001f623), '💬' (\U0001f4ac), '😮' (\U0001f62e), '👌' (\U0001f44c), '❗' (\u2757), ... (and 2 others)
+2025-04-15 12:05:58,627 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_拿到offer入职了呀，结果公司要我交流水_67a570fc000000001902cf1a_detail.pdf
+2025-04-15 12:05:58,906 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_不是入职了，要背调我！个税截图正常提交吗_67a6c99500000000180054a6_detail.pdf
+2025-04-15 12:05:59,093 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😅' (\U0001f605), '✅' (\u2705), '️' (\ufe0f), '⃣' (\u20e3), '💔' (\U0001f494)
+2025-04-15 12:05:59,200 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_空窗期半年，需要个税截图及录屏的使用指南_67f730e6000000001d01e6fc_detail.pdf
+2025-04-15 12:05:59,496 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_不是入职了，我被背调了！要提供个税截图_67a95fbb000000001701d48e_detail.pdf
+2025-04-15 12:05:59,761 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_有空窗期和虚报了，要个税截图怎么办？_67ee1f99000000001b03e3be_detail.pdf
+2025-04-15 12:06:00,094 - INFO - 转换成功：xhs_media_datas_hr入职资料分析_67a332a2000000000d008358_虚报了，谈薪资时要提供个税截图，别慌张_67d7c713000000000900e391_detail.pdf
+2025-04-15 12:06:00,571 - INFO - 转换成功：xhs_media_datas_一心榴莲_61613420000000000201df68_一心家才有的奶油金枕_672f1f1f000000001d03bd52_detail.pdf
+2025-04-15 12:06:00,738 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👏' (\U0001f44f)
+2025-04-15 12:06:00,840 - INFO - 转换成功：xhs_media_datas_一心榴莲_61613420000000000201df68_让我们恭喜榴莲肉单独出道了👏_67274e72000000001d03a67b_detail.pdf
+2025-04-15 12:06:00,840 - INFO - 发现视频文件，跳过目录：12分钟春季肝胆经疏通瑜伽改善瘀堵消水肿_67b5409f0000000029039880
+2025-04-15 12:06:01,149 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '⚠' (\u26a0), '️' (\ufe0f), '❗' (\u2757), '	' (\t), '❓' (\u2753), '⃣' (\u20e3), '❌' (\u274c), '💰' (\U0001f4b0)
+2025-04-15 12:06:01,253 - INFO - 转换成功：xhs_media_datas_Z卓意严选_6540884d000000000400a4cb_我去！60两盒榴莲？！_66bda843000000001e019cb9_detail.pdf
+2025-04-15 12:06:01,436 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '❗' (\u2757), '️' (\ufe0f), '	' (\t)
+2025-04-15 12:06:01,560 - INFO - 转换成功：xhs_省考乡村振兴案例_拿铁公考面试间_65452696000000000400a392_山东省考预测❗️乡村振兴相关案例_67c81f5f00000000060381ee_detail.pdf
+2025-04-15 12:06:02,305 - INFO - 转换成功：xhs_省考乡村振兴案例_文旅策划库_66e84d75000000000d025beb_乡村振兴8大成功案例！_670da4d70000000021007556_detail.pdf
+2025-04-15 12:06:02,547 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '❗' (\u2757), '️' (\ufe0f)
+2025-04-15 12:06:02,628 - INFO - 转换成功：xhs_省考乡村振兴案例_上岸小助手_673ed5d9000000001d02d1f4_3.15省考县乡卷必备乡村振兴类范文❗️_67ce79320000000007035f5a_detail.pdf
+2025-04-15 12:06:02,853 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 12:06:02,936 - INFO - 转换成功：xhs_省考乡村振兴案例_申论茶馆_67a1abeb000000000d00add1_省考倒计时8天！申论高分范文：乡村振兴_67ca9c5c000000000b0161b4_detail.pdf
+2025-04-15 12:06:03,168 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 12:06:03,251 - INFO - 转换成功：xhs_省考乡村振兴案例_落笔生Hua_65fd8c9b000000000b00c13e_3月6日人民日报文章精析——乡村振兴_67c8ff3c0000000029034825_detail.pdf
+2025-04-15 12:06:03,662 - INFO - 转换成功：xhs_media_datas_欢喜-_61f7760e000000001000fc6a_榴莲_674b27db000000000202f865_detail.pdf
+2025-04-15 12:06:04,101 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👀' (\U0001f440), '🎊' (\U0001f38a), '	' (\t), '🌟' (\U0001f31f), '💛' (\U0001f49b), '🍈' (\U0001f348), '🌿' (\U0001f33f), '🐱' (\U0001f431)
+2025-04-15 12:06:04,209 - INFO - 转换成功：xhs_media_datas_金凤壹号树熟榴莲_6409e5b50000000029011326_终于有线上店铺可以买到榴莲了！_67b6e064000000002a000c4a_detail.pdf
+2025-04-15 12:06:04,394 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '✨' (\u2728)
+2025-04-15 12:06:04,492 - INFO - 转换成功：xhs_事业单位备考攻略_阿粟一昭昭✨_5e299ead00000000010054fb_在职党事业编上岸计划，周末冲刺直接抄！_67c673ee000000000d014b7e_detail.pdf
+2025-04-15 12:06:04,653 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '✨' (\u2728)
+2025-04-15 12:06:04,747 - INFO - 转换成功：xhs_事业单位备考攻略_阿粟一昭昭✨_5e299ead00000000010054fb_被问爆的30天事业单位备考计划！冲刺＋避坑_67c51e66000000001203d039_detail.pdf
+2025-04-15 12:06:05,335 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👉' (\U0001f449)
+2025-04-15 12:06:05,421 - INFO - 转换成功：xhs_事业单位备考攻略_小马老师_5bbcaab318c19a0001519068_👉👉👉事业单位E类必看的备考攻略_67eb8c49000000000b01cdde_detail.pdf
+2025-04-15 12:06:05,422 - INFO - 发现视频文件，跳过目录：花生十三丨事业单位联考职测时间分配_67d9324e000000000d017382
+2025-04-15 12:06:05,948 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🗒' (\U0001f5d2), '	' (\t)
+2025-04-15 12:06:06,043 - INFO - 转换成功：xhs_事业单位备考攻略_困且不困（学习版_6596b14e000000001f03bd10_省考和事业单位双备考的超详细学习计划🗒_675575e4000000000102ae48_detail.pdf
+2025-04-15 12:06:06,323 - INFO - 转换成功：xhs_事业单位备考攻略_好运大人_653b57c30000000004009b12_一点没学？用一晚创造一个奇迹(事业编备考)_67e65b38000000000602a18f_detail.pdf
+2025-04-15 12:06:06,508 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t), '📚' (\U0001f4da)
+2025-04-15 12:06:06,610 - INFO - 转换成功：xhs_事业单位备考攻略_好运大人_653b57c30000000004009b12_事业编裸考大法，求求你学点吧_67dcd239000000000900e892_detail.pdf
+2025-04-15 12:06:07,039 - INFO - 转换成功：xhs_事业单位备考攻略_小妮子学姐_65d845da000000000401ec6a_Deepseek给出的1个月冲刺事业编联考计划_67c16807000000000d017706_detail.pdf
+2025-04-15 12:06:07,039 - INFO - 发现视频文件，跳过目录：言语如何做复盘_67f7bc90000000000e00489d
+2025-04-15 12:06:07,589 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🚗' (\U0001f697), '	' (\t)
+2025-04-15 12:06:07,720 - INFO - 转换成功：xhs_事业单位备考攻略_戴蒙的人生笔记🚗_613592a6000000000201aa73_27天极限考编第一名上岸，我是怎么做到的？_67e6c25b000000001d0246fe_detail.pdf
+2025-04-15 12:06:08,035 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '✅' (\u2705), '	' (\t), '﻿' (\ufeff)
+2025-04-15 12:06:08,124 - INFO - 转换成功：xhs_事业单位备考攻略_考编那些事_5b11418ae8ac2b27ed3bbca0_0基础从3月22日开始备考福建事业单位！_67dd22c20000000009014195_detail.pdf
+2025-04-15 12:06:08,335 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '﻿' (\ufeff)
+2025-04-15 12:06:08,414 - INFO - 转换成功：xhs_事业单位备考攻略_哈喽小仙女_6796db40000000000e01ebca_马克公基学习顺序丨25天速成版‼️_67f1bf56000000001e0008d2_detail.pdf
+2025-04-15 12:06:09,009 - INFO - 转换成功：xhs_事业单位备考攻略_A一杯奶茶_6483bea40000000025035035_15天极限过3.29事业单位A类（差生版）_67d1886c000000000d0146bb_detail.pdf
+2025-04-15 12:06:09,514 - INFO - 转换成功：xhs_事业单位备考攻略_福建事业单位备考_61a31d480000000010005b14_因为淋过雨，25考公人可以直接抄的备考攻略_66f289aa000000001902fac4_detail.pdf
+2025-04-15 12:06:10,201 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '📣' (\U0001f4e3), '🌷' (\U0001f337), '	' (\t), '️' (\ufe0f), '➕' (\u2795), '🙇' (\U0001f647)
+2025-04-15 12:06:10,302 - INFO - 转换成功：xhs_事业单位备考攻略_鲁鲁西！_646496f0000000001f0313fb_给仅剩25天考事业编D类的姐妹一个暗黑办法_67c86bf50000000009016c12_detail.pdf
+2025-04-15 12:06:10,482 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💁' (\U0001f481), '	' (\t), '🚨' (\U0001f6a8), '️' (\ufe0f), '⃣' (\u20e3), '⚠' (\u26a0), '✅' (\u2705), '👉' (\U0001f449), '👀' (\U0001f440), '🔥' (\U0001f525), ... (and 2 others)
+2025-04-15 12:06:10,604 - INFO - 转换成功：xhs_事业单位备考攻略_HT华图公考事业编考试_5f6203c5000000000101f6e6_3.15省考结束了，如何备战事业编？_67d7e72c000000000900dc24_detail.pdf
+2025-04-15 12:06:10,841 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🎯' (\U0001f3af), '🎈' (\U0001f388), '👏' (\U0001f44f), '😎' (\U0001f60e), '🤗' (\U0001f917), '🧐' (\U0001f9d0), '😜' (\U0001f61c), '👍' (\U0001f44d), '😃' (\U0001f603), '💪' (\U0001f4aa), ... (and 2 others)
+2025-04-15 12:06:10,984 - INFO - 转换成功：xhs_事业单位备考攻略_L学长（考公版）_5ca628f900000000120275d4_小破站堪称事业编备考的绝佳学习圣地_67af1698000000002602c0e1_detail.pdf
+2025-04-15 12:06:11,480 - INFO - 转换成功：xhs_事业单位备考攻略_L学长（考公版）_5ca628f900000000120275d4_事业单位联考最后15天，冲刺怎么学_67d77a38000000001d027c37_detail.pdf
+2025-04-15 12:06:12,172 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 12:06:12,259 - INFO - 转换成功：xhs_事业单位备考攻略_L学长（考公版）_5ca628f900000000120275d4_悄悄告诉你，综应a靠背这些上岸的_67be8035000000000e004300_detail.pdf
+2025-04-15 12:06:12,260 - INFO - 发现视频文件，跳过目录：自用考编资料分享！职测➕综应_67c57213000000000900e6b6
+2025-04-15 12:06:12,910 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💯' (\U0001f4af), '️' (\ufe0f), '	' (\t), '🌻' (\U0001f33b)
+2025-04-15 12:06:13,009 - INFO - 转换成功：xhs_事业单位备考攻略_锦跃教育咨询_64098e230000000029016100_2025公基笔记背诵💯无非这些知识点_674fb287000000000702b804_detail.pdf
+2025-04-15 12:06:13,472 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😱' (\U0001f631), '📢' (\U0001f4e2), '	' (\t), '️' (\ufe0f), '🌈' (\U0001f308)
+2025-04-15 12:06:13,571 - INFO - 转换成功：xhs_事业单位备考攻略_锦跃教育咨询_64098e230000000029016100_存下吧😱公基不用啃书，学霸笔记熬夜背_67c7ac45000000002803503c_detail.pdf
+2025-04-15 12:06:13,572 - INFO - 发现视频文件，跳过目录：救命篇｜手把手一篇教会怎么学职测‼️🆘_66ed8dfa00000000120139ba
+2025-04-15 12:06:13,572 - INFO - 发现视频文件，跳过目录：姐要考第一！！事业编高效备考🧚🏻‍♀️6h_67c44af1000000000602b683
+2025-04-15 12:06:13,573 - INFO - 发现视频文件，跳过目录：每天必练的六个瑜伽动作跟练版_64ed79da000000001f03ab3f
+2025-04-15 12:06:13,577 - INFO - 发现视频文件，跳过目录：每天必练的七个瑜伽动作（跟练版）_67230e8d000000001901541d
+2025-04-15 12:06:14,140 - INFO - 转换成功：xhs_考公心理调适方法_杨帆（督学版）_66dbf2f7000000001d022f2e_长期备考的心理调节经验_66ef7c8a000000001e01b929_detail.pdf
+2025-04-15 12:06:14,140 - INFO - 发现视频文件，跳过目录：每天都可以做的调整心情的几个小方法_675fd3ef000000000600fdb1
+2025-04-15 12:06:14,617 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👇' (\U0001f447), '🏻' (\U0001f3fb), '❗' (\u2757), '🙌' (\U0001f64c), '🙏' (\U0001f64f), '👩' (\U0001f469), '💻' (\U0001f4bb), '🤟' (\U0001f91f), '	' (\t), '👊' (\U0001f44a), ... (and 7 others)
+2025-04-15 12:06:14,745 - INFO - 转换成功：xhs_考公心理调适方法_在下煎饼大王_5fe19ce30000000001005290_行动是打败焦虑的最好方法_67bc52b200000000070340aa_detail.pdf
+2025-04-15 12:06:15,126 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:06:15,304 - INFO - 转换成功：xhs_考公心理调适方法_王哥不焦虑_66e28057000000000b031767_考公焦虑症的执念：必须把所有事情都想通_677df2e0000000002001f8f5_detail.pdf
+2025-04-15 12:06:15,706 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:06:15,795 - INFO - 转换成功：xhs_考公心理调适方法_银河系自习室天天姐姐_62a915ca000000001902b14c_利用焦虑的方法：杀老虎原则_67ebbc3d000000001d00bbd0_detail.pdf
+2025-04-15 12:06:15,965 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:06:16,111 - INFO - 转换成功：xhs_考公心理调适方法_已经上岸的小杨_65e85a30000000000500eb88_考公最难的从来不是考公本身，而是心态_67cc06690000000029032f03_detail.pdf
+2025-04-15 12:06:16,111 - INFO - 发现视频文件，跳过目录：公考面试心理按摩又来了_67ee623c000000000b02e967
+2025-04-15 12:06:16,112 - INFO - 发现视频文件，跳过目录：人民日报推荐的6个瑜伽动作_67de429c000000001201fec2
+2025-04-15 12:06:16,117 - INFO - 发现视频文件，跳过目录：阳光下的瑜伽晨练☀️给自己一个温暖的拥抱～_67e77f2f000000001c00273f
+2025-04-15 12:06:16,120 - INFO - 发现视频文件，跳过目录：8min，体态改善_66754727000000001d017d48
+2025-04-15 12:06:16,120 - INFO - 发现视频文件，跳过目录：2024年留学账号爆发，但能火的就只有这3种_65f2ea72000000000d00fe39
+2025-04-15 12:06:16,465 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '➕' (\u2795), '🌟' (\U0001f31f), '	' (\t)
+2025-04-15 12:06:16,558 - INFO - 转换成功：xhs_考公万能六项框架_小米姜姜酱_6546275a000000000d005515_万能大作文框架模版分享（小傻瓜式攻略）_67ccda7a000000000d014cd9_detail.pdf
+2025-04-15 12:06:16,993 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🎁' (\U0001f381), '🆓' (\U0001f193), '👗' (\U0001f457)
+2025-04-15 12:06:17,079 - INFO - 转换成功：xhs_考公万能六项框架_依依公考面试_666313ac000000000b031f9f_【结构化面试】5大题型答题思路全解析_6739c2b0000000001a01f8a9_detail.pdf
+2025-04-15 12:06:17,782 - INFO - 转换成功：xhs_考公万能六项框架_小原学姐（公考上岸版）_65b1cc4c000000000d03e41d_有用！怪不得别人公基一秒一个还全对！！_6778b6b2000000001300829b_detail.pdf
+2025-04-15 12:06:18,920 - INFO - 转换成功：xhs_考公万能六项框架_粉笔小媛子_63c7fdc40000000027035e4d_材料作文万能模板_670f28d700000000210057c6_detail.pdf
+2025-04-15 12:06:19,286 - INFO - 转换成功：xhs_考公万能六项框架_粉笔小媛子_63c7fdc40000000027035e4d_申论万能分类体系_6729e2150000000019017966_detail.pdf
+2025-04-15 12:06:19,792 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '⭕' (\u2b55), '💢' (\U0001f4a2), '﻿' (\ufeff)
+2025-04-15 12:06:19,896 - INFO - 转换成功：xhs_考公万能六项框架_大斌公考官方_5fadea6a00000000010003db_申论万能开头结尾集锦，必背！_67c7a862000000002802a36b_detail.pdf
+2025-04-15 12:06:19,897 - INFO - 发现视频文件，跳过目录：背100个俗套框架，不如花60分钟学会我1个月_66554c6b00000000140195e9
+2025-04-15 12:06:20,292 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔥' (\U0001f525), '🔺' (\U0001f53a), '🔸' (\U0001f538)
+2025-04-15 12:06:20,391 - INFO - 转换成功：xhs_考公万能六项框架_上岸村考公_645e3e51000000001400f1f2_省考结构化面试万能模版🔥高分框架来啦_657e8c55000000003801c452_detail.pdf
+2025-04-15 12:06:21,422 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🍋' (\U0001f34b), '📝' (\U0001f4dd)
+2025-04-15 12:06:21,554 - INFO - 转换成功：xhs_考公万能六项框架_Lemon🍋（25考公版）_622c366200000000210296c8_🍋面试手写框架笔记📝来啦！_67add0350000000018013df0_detail.pdf
+2025-04-15 12:06:22,629 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 12:06:22,723 - INFO - 转换成功：xhs_考公万能六项框架_乐乐的金饭碗_670356e1000000001d0307a5_结构化面试答题模版，90分只背5天！！！_6756432c00000000020154ef_detail.pdf
+2025-04-15 12:06:22,957 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '❗' (\u2757), '️' (\ufe0f)
+2025-04-15 12:06:23,040 - INFO - 转换成功：xhs_考公万能六项框架_燕麦小熊_642d376e0000000011020c94_再看一眼面试答题框架啊❗️❗️_66a3659b0000000005039df3_detail.pdf
+2025-04-15 12:06:23,367 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:06:23,453 - INFO - 转换成功：xhs_考公万能六项框架_Summer_67dbd68d000000000700320f_26考公还没计划的直接抄就可以！从4.15开始_67efd07e000000000e004aa4_detail.pdf
+2025-04-15 12:06:24,103 - INFO - 转换成功：xhs_考公万能六项框架_小布呆_66c0959b000000001d0219dc_老夏答题框架汇总_6769720b000000000b017181_detail.pdf
+2025-04-15 12:06:25,149 - INFO - 转换成功：xhs_考公万能六项框架_赵金木_5caf56050000000016019e32_行测从50+到70+的备考经验（后附思维导图）_663ccdc4000000001e03a95f_detail.pdf
+2025-04-15 12:06:25,574 - INFO - 转换成功：xhs_考公万能六项框架_小冉萌萌哒_5a9d55c3e8ac2b376f87ce31_写小说总有宝宝问我怎么扒框架_662dae32000000000103297a_detail.pdf
+2025-04-15 12:06:25,575 - INFO - 发现视频文件，跳过目录：考公人必看｜这个学申论的万能框架！超好用！_671b92e70000000021000877
+2025-04-15 12:06:26,067 - INFO - 转换成功：xhs_考公万能六项框架_银色山_61c67ba3000000001000a372_粉笔9802025省考行测+申论_66fce687000000001b023c19_detail.pdf
+2025-04-15 12:06:26,591 - INFO - 转换成功：xhs_考公万能六项框架_已上岸的桃子_5506f3fea46e9649eae648b3_公考事业编万能框架大合集，谁看谁上岸_64aa11a60000000010028906_detail.pdf
+2025-04-15 12:06:27,209 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '➕' (\u2795), '	' (\t)
+2025-04-15 12:06:27,318 - INFO - 转换成功：xhs_考公万能六项框架_发呆办主任_67a5eac1000000000e01102e_申论千万别裸考大作文速成指南（框架版）_67cd35a8000000000900c211_detail.pdf
+2025-04-15 12:06:27,662 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:06:28,086 - INFO - 转换成功：xhs_考公万能六项框架_经检验能成功_639762a70000000026004041_结构化面试框架笔记_667735a3000000001c0298f2_detail.pdf
+2025-04-15 12:06:28,396 - INFO - 转换成功：xhs_考公万能六项框架_不盟_5d2c501d000000001100a366_粉笔980-资料分析知识点框架_64d9d863000000000c036752_detail.pdf
+2025-04-15 12:06:28,854 - INFO - 转换成功：xhs_考公万能六项框架_freeeeeeme_597368595e87e7233f8e9bfd_行测思维导图（我自己总结的！_6649a390000000001401bbdd_detail.pdf
+2025-04-15 12:06:29,289 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:06:29,374 - INFO - 转换成功：xhs_考公万能六项框架_公考牟立志讲数资_66a52952000000000b0313d8_超大杯资料框架梳理2.0（挖空版）_67c9454d000000001201e22c_detail.pdf
+2025-04-15 12:06:30,342 - INFO - 转换成功：xhs_考公万能六项框架_公考牟立志讲数资_66a52952000000000b0313d8_超大杯框架梳理2.0_678295490000000017038cf6_detail.pdf
+2025-04-15 12:06:30,658 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:06:30,746 - INFO - 转换成功：xhs_考公万能六项框架_阿花花卷_6097a3b80000000001002de6_《面试版一张纸默写完所有答题框架》_65ae6e58000000002c0375c3_detail.pdf
+2025-04-15 12:06:30,746 - INFO - 发现视频文件，跳过目录：公务员面试万能答题框架_678e08b00000000018004833
+2025-04-15 12:06:31,112 - INFO - 转换成功：xhs_考公万能六项框架_小红薯67CC968E_67cbf2e1000000000e01d529_不夸张，省考面试我30秒就能写出来框架_67cbf532000000002a00f894_detail.pdf
+2025-04-15 12:06:31,598 - INFO - 转换成功：xhs_行测正确率提升技巧_风吹屁屁凉(不上岸一直凉)_614acfe8000000001f03622f_行测从55到76的突破之路_67892596000000001901e5da_detail.pdf
+2025-04-15 12:06:32,574 - INFO - 转换成功：xhs_行测正确率提升技巧_小潘吃维生素了吗_6389889b000000001f0159cd_国考行测81.2分经验贴_678f9e6e0000000018005e7c_detail.pdf
+2025-04-15 12:06:33,373 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🤩' (\U0001f929)
+2025-04-15 12:06:33,473 - INFO - 转换成功：xhs_行测正确率提升技巧_奇妙耶耶（考公版）_659509be000000001f03a66b_本人亲测，行测蒙题大法真的有用🤩_672d75500000000019017dbb_detail.pdf
+2025-04-15 12:06:33,850 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:06:33,947 - INFO - 转换成功：xhs_行测正确率提升技巧_爱学习的小糯米_6502b19d000000000201131e_行测81笨方法分享_67d1a3d3000000000d01616a_detail.pdf
+2025-04-15 12:06:34,568 - INFO - 转换成功：xhs_行测正确率提升技巧_.._602a960f000000000101f03e_言语理解自悟出的一个做题方法（一）_67c85366000000002902d3f6_detail.pdf
+2025-04-15 12:06:35,114 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '⃣' (\u20e3)
+2025-04-15 12:06:35,230 - INFO - 转换成功：xhs_行测正确率提升技巧_咕噜羊（无小号版）_66f5208f000000000b0304d6_行测从53到73（熬夜总结的经验)_67e4db52000000000b014b1a_detail.pdf
+2025-04-15 12:06:36,129 - INFO - 转换成功：xhs_行测正确率提升技巧_下次见我叫李局_659b525f000000001f03b829_言语理解正确率低于95%的，一定要看完这篇_67e3be40000000000603a64d_detail.pdf
+2025-04-15 12:06:37,078 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😭' (\U0001f62d)
+2025-04-15 12:06:37,173 - INFO - 转换成功：xhs_行测正确率提升技巧_ajack（上岸版）_667e510300000000030307b8_判断推理正确率50%——90%，经验分享_67e116f3000000001b0247ac_detail.pdf
+2025-04-15 12:06:37,723 - INFO - 转换成功：xhs_行测正确率提升技巧_ajack（上岸版）_667e510300000000030307b8_言语理解正确率95%，深度复盘_67de707d000000001e0049de_detail.pdf
+2025-04-15 12:06:38,510 - INFO - 转换成功：xhs_行测正确率提升技巧_ajack（上岸版）_667e510300000000030307b8_逻辑填空正确率60%——90%深度复盘_67e543af000000001d0274cf_detail.pdf
+2025-04-15 12:06:38,939 - INFO - 转换成功：xhs_行测正确率提升技巧_ajack（上岸版）_667e510300000000030307b8_个人认为行测提分最快的方法（野路子）_67d39622000000001b024ad5_detail.pdf
+2025-04-15 12:06:39,572 - INFO - 转换成功：xhs_行测正确率提升技巧_ajack（上岸版）_667e510300000000030307b8_行测从52到74，我只做了三点调整_67cadde2000000002a001177_detail.pdf
+2025-04-15 12:06:40,190 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f)
+2025-04-15 12:06:40,286 - INFO - 转换成功：xhs_行测正确率提升技巧_超韧150分_626e28ee000000001000a51a_行测从60分提升到74分我是如何做到的？_6687fe54000000000a02560d_detail.pdf
+2025-04-15 12:06:40,874 - INFO - 转换成功：xhs_行测正确率提升技巧_蜗牛别等我_62580f1300000000210232a6_国考150+经验贴（行测）_67cd96df00000000290331d2_detail.pdf
+2025-04-15 12:06:41,813 - INFO - 转换成功：xhs_行测正确率提升技巧_顺其自然_65f0025d000000000500f378_行测复盘方法_66cd62a4000000001d03a171_detail.pdf
+2025-04-15 12:06:42,101 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🐟' (\U0001f41f)
+2025-04-15 12:06:42,222 - INFO - 转换成功：xhs_行测正确率提升技巧_香菜鱼🐟_6533c95f000000000301c2ab_行测练习了半年多还是没提高，那是方法错了_6624798b000000000d032771_detail.pdf
+2025-04-15 12:06:43,139 - INFO - 转换成功：xhs_行测正确率提升技巧_礼早_614608bb000000000202617f_国考行测83.2干货经验分享_679ef7ff000000002a00d496_detail.pdf
+2025-04-15 12:06:43,713 - INFO - 转换成功：xhs_行测正确率提升技巧_唱唱反调_65e43c4b0000000005009962_行测各模块经验_678c87a20000000003020496_detail.pdf
+2025-04-15 12:06:44,034 - INFO - 转换成功：xhs_行测正确率提升技巧_莫等闲_62036f57000000001000dc3e_国考行测81.5经验分享（常识）_667107ff000000001c029ef3_detail.pdf
+2025-04-15 12:06:44,704 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🫐' (\U0001fad0)
+2025-04-15 12:06:44,834 - INFO - 转换成功：xhs_行测正确率提升技巧_还珠郭郭呗_5a6d6927e8ac2b2bff502e24_言语理解正确率80%，如何提升阅读速度？_666f1367000000001d01406a_detail.pdf
+2025-04-15 12:06:45,668 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:06:45,777 - INFO - 转换成功：xhs_行测正确率提升技巧_小胖橙学行测_66c97874000000000d024817_从行测50分到79分的万字的经验贴(实操版)_67924a1a00000000180125cd_detail.pdf
+2025-04-15 12:06:46,178 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '⃣' (\u20e3)
+2025-04-15 12:06:46,292 - INFO - 转换成功：xhs_行测正确率提升技巧_懒懒来了（上岸版）_5f6608c7000000000101ded7_进考场前，强烈建议再把行测知识串一遍‼️_67cb9e9c000000000903afc4_detail.pdf
+2025-04-15 12:06:46,798 - INFO - 转换成功：xhs_行测正确率提升技巧_九品小吏_5fffeae40000000001004dfc_刷了两万题，我建立了图形推理思维框架_665025e20000000015012834_detail.pdf
+2025-04-15 12:06:47,210 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:06:47,313 - INFO - 转换成功：xhs_行测正确率提升技巧_lucky_62da7181000000000303c390_行测题刷题一万不如用心复盘三天（技巧版）_67c54af6000000000302ad4e_detail.pdf
+2025-04-15 12:06:48,313 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:06:48,425 - INFO - 转换成功：xhs_行测正确率提升技巧_诗诗倒计时_5e15c6cc0000000001006323_行测大部分人都是从四五十分过来的吗？_67acaba5000000002602f5b4_detail.pdf
+2025-04-15 12:06:48,719 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🔥' (\U0001f525), '📚' (\U0001f4da), '💪' (\U0001f4aa), '📌' (\U0001f4cc), '✅' (\u2705), '	' (\t), '📊' (\U0001f4ca), '🔹' (\U0001f539), '📖' (\U0001f4d6), '🤔' (\U0001f914), ... (and 5 others)
+2025-04-15 12:06:48,864 - INFO - 转换成功：xhs_行测正确率提升技巧_萨米学姐（上岸版）_64e0d081000000000100e92e_公考行测上岸经验这样学提分超快！🔥_67a7804800000000180046af_detail.pdf
+2025-04-15 12:06:48,864 - INFO - 发现视频文件，跳过目录：资料分析慢的来比你做10篇有意义，都是技巧_67b8418a0000000007036dfe
+2025-04-15 12:06:49,212 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🥰' (\U0001f970), '💪' (\U0001f4aa), '⃣' (\u20e3), '🤗' (\U0001f917), '🥳' (\U0001f973), '😎' (\U0001f60e)
+2025-04-15 12:06:49,325 - INFO - 转换成功：xhs_media_datas_别开水果店_5fcadd2b0000000001004d7c_教你挑榴莲_6631e2a0000000001e0396f9_detail.pdf
+2025-04-15 12:06:49,325 - INFO - 发现视频文件，跳过目录：田大叔直播间100多能买多少榴莲！_6725bf14000000001d03b97c
+2025-04-15 12:06:49,326 - INFO - 发现视频文件，跳过目录：留学已经大众化_67107f07000000002401b761
+2025-04-15 12:06:49,327 - INFO - 发现视频文件，跳过目录：第314道菜无水蔬菜汤🥬这才叫原汁原味_67d8ed2900000000030293cc
+2025-04-15 12:06:49,327 - INFO - 发现视频文件，跳过目录：食草族食谱！芝麻菠菜金针菇｜水润清爽！！_67da5eac000000001d01ec78
+2025-04-15 12:06:49,327 - INFO - 发现视频文件，跳过目录：🫐11｜吃干净漂亮的食物完成高能量体质_66f2c5e8000000001902fc57
+2025-04-15 12:06:49,328 - INFO - 发现视频文件，跳过目录：节后大餐补救❗️清肠刮油“小绿汁”🥬_67a211c1000000002903401f
+2025-04-15 12:06:49,328 - INFO - 发现视频文件，跳过目录：🌽比饭店还好喝的奶香玉米汁❗️_67d03bc7000000001203c58f
+2025-04-15 12:06:49,328 - INFO - 发现视频文件，跳过目录：不加一滴水❗️原汁原味无水鸡肉时蔬煲❗️_677651ae000000000b014401
+2025-04-15 12:06:49,803 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t), '🌟' (\U0001f31f), '🧑' (\U0001f9d1), '🍳' (\U0001f373), '⃣' (\u20e3), '️' (\ufe0f), '🌈' (\U0001f308)
+2025-04-15 12:06:49,912 - INFO - 转换成功：xhs_宝宝食谱_紫旭妈妈_63120bf40000000012003f3a_12m+辅食｜鸡蛋抱豆腐鲜香爽滑巨巨费米饭_640934a800000000130163c0_detail.pdf
+2025-04-15 12:06:50,524 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '✅' (\u2705), '📝' (\U0001f4dd), '➕' (\u2795), '🔍' (\U0001f50d), '🔸' (\U0001f538)
+2025-04-15 12:06:50,634 - INFO - 转换成功：xhs_宝宝食谱_小可乐的日食记_5a6bd3104eacab4db462e098_1岁+宝宝辅食快手午晚餐搭配✅简单营养_6704e51b000000001b0216be_detail.pdf
+2025-04-15 12:06:52,028 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '👀' (\U0001f440), '⃣' (\u20e3), '🍗' (\U0001f357), '🔟' (\U0001f51f), '👨' (\U0001f468), '🏻' (\U0001f3fb), '🍳' (\U0001f373), '	' (\t)
+2025-04-15 12:06:52,156 - INFO - 转换成功：xhs_宝宝食谱_米诺妈妈_5c471d2e0000000010035a13_16款宝宝营养蒸菜合集‼️原汁原味.清淡健康_666c01b5000000001c020030_detail.pdf
+2025-04-15 12:06:53,184 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '⃣' (\u20e3), '🔟' (\U0001f51f), '👨' (\U0001f468), '🏻' (\U0001f3fb), '🍳' (\U0001f373), '	' (\t)
+2025-04-15 12:06:53,303 - INFO - 转换成功：xhs_宝宝食谱_米诺妈妈_5c471d2e0000000010035a13_10M+辅食12款小饼合集‼️鲜香软嫩.手指食物_658a913700000000120096f3_detail.pdf
+2025-04-15 12:06:53,942 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😋' (\U0001f60b), '🌈' (\U0001f308), '🍡' (\U0001f361), '️' (\ufe0f), '🛒' (\U0001f6d2), '✅' (\u2705), '🧑' (\U0001f9d1), '🍳' (\U0001f373), '⃣' (\u20e3)
+2025-04-15 12:06:54,050 - INFO - 转换成功：xhs_宝宝食谱_祐祐家简生活_599a699e82ec3955d180d029_宝宝版里脊小肉串｜外焦里嫩一定不能错过😋_664864720000000016012c01_detail.pdf
+2025-04-15 12:06:55,135 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '⃣' (\u20e3), '️' (\ufe0f), '🌈' (\U0001f308), '	' (\t), '🍎' (\U0001f34e), '🍌' (\U0001f34c), '🍒' (\U0001f352), '🎃' (\U0001f383), '🫐' (\U0001fad0), '🍠' (\U0001f360), ... (and 5 others)
+2025-04-15 12:06:55,269 - INFO - 转换成功：xhs_宝宝食谱_叶子辅食记_5ec5f75d0000000001004794_12款宝宝0⃣️失败手指食物合集营养又美味～_66b45054000000001e01ea75_detail.pdf
+2025-04-15 12:06:56,252 - INFO - 转换成功：xhs_宝宝食谱_狗哥和虎弟_63bfac7a0000000027034a47_12道宝宝追高常吃的菜做法，拿本本记下来_67a72326000000001902e5bb_detail.pdf
+2025-04-15 12:06:56,591 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '‮' (\u202e), '‬' (\u202c), '❗' (\u2757), '👉' (\U0001f449), '👍' (\U0001f44d), '👇' (\U0001f447), '	' (\t), '📝' (\U0001f4dd), '⃣' (\u20e3), '🍎' (\U0001f34e), ... (and 8 others)
+2025-04-15 12:06:56,703 - INFO - 转换成功：xhs_宝宝食谱_暄暄妈妈_64b4e8fe000000002b00bd2a_调理脾‮有胃‬顺序❗千‮要万‬搞清楚👉附食谱_679f5d410000000018018f46_detail.pdf
+2025-04-15 12:06:57,425 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '👶' (\U0001f476), '🌟' (\U0001f31f), '😋' (\U0001f60b), '🧑' (\U0001f9d1), '🍳' (\U0001f373), '⚠' (\u26a0), '️' (\ufe0f), '🔸' (\U0001f538)
+2025-04-15 12:06:57,530 - INFO - 转换成功：xhs_宝宝食谱_是雯雯吖_5a0e5b1711be10276e4dac56_👶宝宝营养辅食粥🌟健脾养胃、补铁补锌_65e06f1c000000000b00e2c8_detail.pdf
+2025-04-15 12:06:58,752 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '✅' (\u2705), '	' (\t), '⃣' (\u20e3), '🔟' (\U0001f51f), '🧂' (\U0001f9c2)
+2025-04-15 12:06:58,871 - INFO - 转换成功：xhs_宝宝食谱_哈哈麻麻_586102956a6a6951e90792d7_24款家常蒸菜大合集‼️营养健康✅好吃不上火_67b32066000000002903c5d7_detail.pdf
+2025-04-15 12:06:59,670 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '➕' (\u2795), '✅' (\u2705), '⃣' (\u20e3)
+2025-04-15 12:06:59,802 - INFO - 转换成功：xhs_宝宝食谱_米拉麻麻_626e731b0000000021029283_宝宝一周午餐营养搭配不重样简单快手_668e0ea600000000250163f3_detail.pdf
+2025-04-15 12:07:00,295 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💯' (\U0001f4af)
+2025-04-15 12:07:00,393 - INFO - 转换成功：xhs_宝宝食谱_默默妈妈_63536889000000001802b820_健脾养胃的山药芙蓉羹｜做法简单营养美味💯_67ade12e000000001801a05a_detail.pdf
+2025-04-15 12:07:00,886 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f), '🛒' (\U0001f6d2), '🌈' (\U0001f308), '⚠' (\u26a0), '🤭' (\U0001f92d), '📢' (\U0001f4e2)
+2025-04-15 12:07:00,986 - INFO - 转换成功：xhs_宝宝食谱_热乎乎的夏天。_5b37602b4eacab0c893eaa47_不会和面也能做的鲜肉锅盔‼️一口掉渣嘎嘎香_667f8937000000001c021d3c_detail.pdf
+2025-04-15 12:07:01,554 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '🌱' (\U0001f331), '🌞' (\U0001f31e), '️' (\ufe0f), '⃣' (\u20e3), '✅' (\u2705), '⚠' (\u26a0)
+2025-04-15 12:07:01,659 - INFO - 转换成功：xhs_宝宝食谱_小时光🌱_62c7ebf80000000002000ae7_一岁+宝宝辅食下饭菜！_66926ecf0000000025003980_detail.pdf
+2025-04-15 12:07:02,139 - INFO - 转换成功：xhs_宝宝食谱_韬子生活日记_5d22d78c000000001202cbbb_无标题_67c47ea20000000029039e74_detail.pdf
+2025-04-15 12:07:02,437 - INFO - 转换成功：xhs_user_5f08450b000000000101dc15_momo_5f08450b000000000101dc15_家教老师的命也是命_67f24ecd000000000b02e6ae_detail.pdf
+2025-04-15 12:07:02,438 - INFO - 发现视频文件，跳过目录：金枕榴莲之梦中情莲视频纯享版3.0_67588f19000000000603e5bf
+2025-04-15 12:07:02,439 - INFO - 发现视频文件，跳过目录：有门就能练每天跟我练3遍老阿姨变小姐姐_665091c300000000140181fc
+2025-04-15 12:07:02,439 - INFO - 发现视频文件，跳过目录：南师讲三脉七轮（下）_67054551000000002c02dc5b
+2025-04-15 12:07:02,439 - INFO - 发现视频文件，跳过目录：🌙晚间30min阴瑜伽，治愈一整天的疲惫🧘‍♀️_67c79ff90000000009016e0e
+2025-04-15 12:07:02,683 - INFO - 转换成功：xhs_公考网课对比测评_每天都很饿_5bc1a04ab1da140f62e28585_刘文超老师，你是我的神_67f0037f000000001c0326ee_detail.pdf
+2025-04-15 12:07:03,200 - INFO - 转换成功：xhs_公考网课对比测评_国考头子_64dba9ef000000000100dd2f_考公最强名师推荐_671cde06000000002100a106_detail.pdf
+2025-04-15 12:07:03,608 - INFO - 转换成功：xhs_公考网课对比测评_尽思量_67a9a51c000000000e0132f6_事业编网课测评，一次说明白_67ea37b9000000000f030caf_detail.pdf
+2025-04-15 12:07:03,988 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '📚' (\U0001f4da), '️' (\ufe0f), '⃣' (\u20e3), '⚠' (\u26a0), '💡' (\U0001f4a1), '📌' (\U0001f4cc), '🌟' (\U0001f31f), '👇' (\U0001f447)
+2025-04-15 12:07:04,105 - INFO - 转换成功：xhs_公考网课对比测评_张张考资_634fbb0a000000001802e4af_老夏vs小马哥，谁才是你的考公面试上岸CP？_67ad2db10000000028036178_detail.pdf
+2025-04-15 12:07:04,323 - INFO - 转换成功：xhs_公考网课对比测评_陪老公上岸！_5cea5dbc000000001700394c_数量关系哪家强_67f8b51c000000001c0090fa_detail.pdf
+2025-04-15 12:07:04,492 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💢' (\U0001f4a2), '😔' (\U0001f614), '	' (\t)
+2025-04-15 12:07:04,586 - INFO - 转换成功：xhs_公考网课对比测评_与编同眠_64ac095b000000000a022de7_为什么公考老师每节课的时间越来越长？_6783de7a000000002001f944_detail.pdf
+2025-04-15 12:07:05,164 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:07:05,275 - INFO - 转换成功：xhs_公考网课对比测评_开心锅包肉_66d06a72000000001d020d27_我宣布！这些老师才是考公的YYDS！_676bed8a000000000b020824_detail.pdf
+2025-04-15 12:07:05,532 - INFO - 转换成功：xhs_公考网课对比测评_Www.com_6624630e000000000b03124f_公基网课测评（个人观点）_67f9baab000000001d016151_detail.pdf
+2025-04-15 12:07:05,532 - INFO - 发现视频文件，跳过目录：你的考公，很可能毁于网课_674a23f50000000002029388
+2025-04-15 12:07:05,787 - INFO - 转换成功：xhs_公考网课对比测评_祝大家天天开心_63aee594000000002702b92e_考公和法考最大的区别_67c2834a00000000290386fd_detail.pdf
+2025-04-15 12:07:06,060 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:07:06,170 - INFO - 转换成功：xhs_公考网课对比测评_文澜上岸书店_63522a7d0000000012026c60_25公务员面试老夏和小马哥1980该选谁？_67552061000000000603c604_detail.pdf
+2025-04-15 12:07:06,886 - INFO - 转换成功：xhs_公考网课对比测评_藏在薰衣草巷_672c6ed2000000001c01b9c7_考公小白行测申论看那个老师老师网课推荐_676a82a7000000000b016f61_detail.pdf
+2025-04-15 12:07:07,652 - INFO - 转换成功：xhs_考公作息时间表_流浪进入森林_653fa2e20000000002013f3c_在职考公时间安排（无痛版）_67f625b4000000000f03364d_detail.pdf
+2025-04-15 12:07:07,983 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💪' (\U0001f4aa), '🌞' (\U0001f31e), '📚' (\U0001f4da), '🍽' (\U0001f37d), '️' (\ufe0f), '📝' (\U0001f4dd), '🌙' (\U0001f319), '🌛' (\U0001f31b), '📌' (\U0001f4cc), '💡' (\U0001f4a1), ... (and 1 others)
+2025-04-15 12:07:08,110 - INFO - 转换成功：xhs_考公作息时间表_王子子_5f8723d50000000001001c72_考公人专属作息表高效备考，一战上岸！_67a5d71b0000000018004d49_detail.pdf
+2025-04-15 12:07:08,342 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😘' (\U0001f618), '👉' (\U0001f449), '🌈' (\U0001f308)
+2025-04-15 12:07:08,429 - INFO - 转换成功：xhs_考公作息时间表_良良要上岸_664f18a50000000007007fa0_就这么学！全职考公无痛作息表来啦！_66b1e6a5000000001e01eba8_detail.pdf
+2025-04-15 12:07:08,608 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '⏰' (\u23f0), '⏳' (\u23f3), '️' (\ufe0f), '⃣' (\u20e3), '﻿' (\ufeff)
+2025-04-15 12:07:08,755 - INFO - 转换成功：xhs_考公作息时间表_欧尼_62aad864000000001902b2a8_在职考公没时间？分享我的学法_67dbcb57000000000603d9b0_detail.pdf
+2025-04-15 12:07:09,052 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '﻿' (\ufeff)
+2025-04-15 12:07:09,140 - INFO - 转换成功：xhs_考公作息时间表_晓晓公考老师_5f36510000000000010001e6_4月才开始26考公的，上岸计划表直接抄！！_67d8db5a000000000302af27_detail.pdf
+2025-04-15 12:07:09,483 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:07:09,574 - INFO - 转换成功：xhs_考公作息时间表_滴滴哒哒嘀_6499b12e000000001001cf1f_四月在职考公作息表月计划表日计划表_67ed0e3c000000001e0029d3_detail.pdf
+2025-04-15 12:07:09,752 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '😏' (\U0001f60f), '📚' (\U0001f4da), '💯' (\U0001f4af)
+2025-04-15 12:07:09,869 - INFO - 转换成功：xhs_考公作息时间表_芝士兔_674d15fc00000000010026a5_我宣布这是考公最舒服的作息表😏_67a6edc1000000001701de51_detail.pdf
+2025-04-15 12:07:10,155 - INFO - 转换成功：xhs_考公作息时间表_啦啦啦_6671093b00000000070063cc_用高中作息的方法去坚持考公_67b2e11400000000180063ad_detail.pdf
+2025-04-15 12:07:10,313 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '💜' (\U0001f49c), '📍' (\U0001f4cd), '⏰' (\u23f0), '🕰' (\U0001f570), '💡' (\U0001f4a1)
+2025-04-15 12:07:10,430 - INFO - 转换成功：xhs_考公作息时间表_moon_62f8cb36000000001f0165e4_我发现了在职考公最舒服的作息状态_67beea570000000028037038_detail.pdf
+2025-04-15 12:07:10,670 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '	' (\t)
+2025-04-15 12:07:10,766 - INFO - 转换成功：xhs_考公作息时间表_嘟嘟_618e2f67000000002102542c_01年体制内｜上岸作息表分享_670f3055000000001b010933_detail.pdf
+2025-04-15 12:07:11,177 - WARNING - Font MPDFAA+ArialUnicodeMS is missing the following glyphs: '️' (\ufe0f)
+2025-04-15 12:07:11,261 - INFO - 转换成功：xhs_考公作息时间表_考公小灵通~_65fd6b67000000000b030251_考公无痛作息状态，下一个上岸的就是你‼️_66a8bce50000000005030989_detail.pdf
+2025-04-15 12:07:11,261 - INFO - 处理完成！共转换 164 个文件
