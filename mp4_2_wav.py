@@ -1,22 +1,28 @@
 """
-video_to_audio_converter_v2.py
-修复verbose参数错误并增强兼容性的视频转音频脚本
+video_to_audio_converter_v3.py
+增强版视频转音频脚本
+功能：
+- 检查audio.wav存在性并跳过处理
+- 自动修复损坏视频文件
+- 中文字符路径兼容
+- 详细日志记录
 """
 import logging
 import os
 import re
-from moviepy import VideoFileClip, config
 import subprocess
+from datetime import datetime
+from moviepy import VideoFileClip, config
 
 # 配置参数
-VIDEO_NAME = "video.mp4"  # 主视频文件名（支持其他扩展名）
-AUDIO_NAME = "audio.wav"  # 输出音频文件名
-LOG_FILE = "audio_conversion_v2.log"
+VIDEO_NAME = "video"  # 主视频文件名（不含扩展）
+AUDIO_NAME = "audio.wav"
+LOG_FILE = "conversion.log"
 VIDEO_EXTS = ('.mp4', '.avi', '.mov', '.mkv', '.flv', '.wmv')
 
 
 def setup_logging():
-    """初始化日志记录"""
+    """初始化日志系统"""
     logging.basicConfig(
         filename=LOG_FILE,
         level=logging.INFO,
@@ -28,14 +34,8 @@ def setup_logging():
     logging.getLogger().addHandler(console)
 
 
-def sanitize_filename(name):
-    """生成安全文件名（保留中日文字符）"""
-    clean_name = re.sub(r'[\\/*?:"<>|]', "-", name)
-    return clean_name[:120]
-
-
 def check_ffmpeg():
-    """验证FFmpeg安装"""
+    """验证FFmpeg环境"""
     try:
         result = subprocess.run(['ffmpeg', '-version'],
                                 stdout=subprocess.PIPE,
@@ -52,22 +52,19 @@ def check_ffmpeg():
 
 
 def convert_video_to_audio(video_path, audio_path):
-    """视频转音频核心逻辑"""
+    """核心转换逻辑"""
     try:
-        # 使用with语句确保资源释放
         with VideoFileClip(video_path) as video:
             audio = video.audio
             audio.write_audiofile(
                 audio_path,
-                codec='pcm_s16le',  # WAV格式
-                fps=44100,  # CD音质
-                logger=None  # 禁用详细日志[4](@ref)
+                codec='pcm_s16le',
+                fps=44100,
+                logger=None  # 禁用详细日志
             )
-            audio.close()
-        return True
+            return True
     except Exception as e:
         logging.error(f"转换失败：{video_path} - {str(e)}")
-        # 尝试修复损坏的视频头
         if "failed to read the first frame" in str(e):
             return repair_video(video_path, audio_path)
         return False
@@ -102,17 +99,21 @@ def repair_video(input_path, output_path):
 
 def process_directory(folder_path):
     """处理单个目录"""
+    # 检查目标音频文件存在性
+    target_audio = os.path.join(folder_path, AUDIO_NAME)
+    if os.path.isfile(target_audio):  # 精确判断文件存在性[2,6](@ref)
+        logging.info(f"跳过目录：{folder_path}（{AUDIO_NAME}已存在）")
+        print(f"[跳过] {folder_path} 已存在音频文件")
+        return False
+
+    # 查找视频文件
     video_files = [
         f for f in os.listdir(folder_path)
-        if os.path.splitext(f)[0].lower() == 'video'
+        if f.lower().startswith(VIDEO_NAME.lower())
            and f.lower().endswith(VIDEO_EXTS)
     ]
 
     if not video_files:
-        return False
-
-    target_audio = os.path.join(folder_path, AUDIO_NAME)
-    if os.path.exists(target_audio):
         return False
 
     # 处理第一个符合条件的视频文件
@@ -129,26 +130,21 @@ def main():
         logging.error("FFmpeg未正确安装，请参考：https://ffmpeg.org/download.html")
         return
 
-    root_folder = input("请输入根文件夹路径：").strip()
-    if not os.path.isdir(root_folder):
-        logging.error("错误：路径不存在或不是文件夹")
-        return
+    # root_folder = input("请输入根文件夹路径：").strip()
+    # if not os.path.isdir(root_folder):
+    #     logging.error("错误：路径不存在或不是文件夹")
+    #     return
+    root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas'
 
     processed = 0
     for root, dirs, files in os.walk(root_folder):
-        # 跳过已存在音频文件的目录
-        if any(f.lower() == AUDIO_NAME.lower() for f in files):
-            continue
-
-        # 处理包含视频文件的目录
-        video_files = [f for f in files if f.lower().startswith('video.')]
-        if video_files:
-            if process_directory(root):
-                processed += 1
+        if process_directory(root):
+            processed += 1
 
     logging.info(f"处理完成！共转换 {processed} 个音频文件")
+    print(f"\n{'-' * 40}")
+    print(f"转换报告：\n- 成功转换：{processed}\n- 日志文件：{os.path.abspath(LOG_FILE)}")
 
 
 if __name__ == "__main__":
-    # /Users/penghao/Documents/GitHub/Spider_XHS/datas
     main()
