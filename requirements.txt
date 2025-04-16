@@ -1,0 +1,12 @@
+asr==0.4.1
+faster_whisper==1.1.1
+fontTools==4.57.0
+fpdf==1.7.2
+funasr==1.2.6
+moviepy==2.1.2
+Pillow >= 9.2.0
+pytesseract==0.3.13
+tools==0.1.9
+torch==2.6.0
+tqdm==4.67.1
+torchaudio

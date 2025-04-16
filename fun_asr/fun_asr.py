@@ -93,6 +93,7 @@ def process_folder(folder_path):
 
 
 if __name__ == "__main__":
+    print("start")
     # parser = argparse.ArgumentParser(description="批量音频转文本工具")
     # parser.add_argument("-i", "--input",
     #                     type=str,
@@ -100,8 +101,8 @@ if __name__ == "__main__":
     #                     help="输入文件夹路径（支持嵌套子目录）")
     # args = parser.parse_args()
 
-    # root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas'
-    root_folder = '/Users/penghao/Documents/GitHub/pdfc'
+    root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas/media_datas'
+    # root_folder = '/Users/penghao/Downloads/pdfc/fun_asr'
 
     if not os.path.isdir(root_folder):
         print(f"错误：路径不存在或不是文件夹 - {root_folder}")
