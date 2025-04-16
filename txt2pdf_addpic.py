@@ -322,4 +322,5 @@ def main():
 
 
 if __name__ == "__main__":
+    # /Users/penghao/Documents/GitHub/Spider_XHS/datas
     main()
