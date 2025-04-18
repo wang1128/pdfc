@@ -1,9 +1,6 @@
 """
-txt2pdf_converter.py
-最终版功能增强：
-- 支持视频文件夹特殊处理
-- 智能封面和文稿处理
-- 双输出目录支持
+txt2pdf_converter.py 最终优化版
+包含所有字体处理改进和错误修复
 """
 import logging
 import os
@@ -17,6 +14,7 @@ from PIL import Image
 
 # 配置参数
 DEFAULT_FONT_SIZE = 12
+CONTENT_FONT_SIZE = 14  # 增大内容字体大小
 MAX_PAGE_WIDTH = 190
 MAX_PAGE_HEIGHT = 270
 SUPPORTED_IMAGE_EXT = ('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.webp')
@@ -66,15 +64,20 @@ class PDFConverter:
         self._init_pdf()
 
     def _init_pdf(self):
-        """初始化PDF基础设置"""
-        self.pdf.add_page()
+        """初始化PDF基础设置（移除初始空白页）"""
         self.pdf.set_auto_page_break(True, margin=15)
         self.pdf.set_margins(10, 15, 10)
         self._load_fonts()
 
     def _load_fonts(self):
-        """加载系统字体并排序"""
+        """加载系统字体（macOS优化版）"""
         font_paths = [
+            ("NotoSansCJKsc", "/System/Library/Fonts/Supplemental/NotoSansCJKsc-Regular.ttf"),
+            ("PingFang", "/System/Library/Fonts/PingFang.ttc"),
+            ("Arial", "/Library/Fonts/Arial.ttf"),
+            ("ArialUnicode", "/System/Library/Fonts/Arial Unicode.ttf"),
+            ("Symbola", "/Library/Fonts/Symbola.ttf"),
+            ("NotoColorEmoji", "/System/Library/Fonts/NotoColorEmoji.ttf"),
             ("NotoEmoji", "/System/Library/Fonts/NotoColorEmoji.ttf"),
             ("SegoeUIEmoji", "C:/Windows/Fonts/seguiemj.ttf"),
             ("Symbola", "/usr/share/fonts/truetype/symbola.ttf"),
@@ -83,23 +86,25 @@ class PDFConverter:
             ("ArialUnicode", os.path.expanduser("~/Library/Fonts/Arial Unicode.ttf"))
         ]
 
-        for name, path in font_paths:
-            if os.path.exists(path):
+        for font_name, font_path in font_paths:
+            if os.path.exists(font_path):
                 try:
-                    self.pdf.add_font(name, "", path, uni=True)
-                    self.available_fonts.append(name)
+                    self.pdf.add_font(font_name, style="", fname=font_path, uni=True)
+                    self.pdf.add_font(font_name, style="B", fname=font_path, uni=True)
+                    self.available_fonts.append(font_name)
                 except Exception as e:
-                    logging.warning(f"字体加载失败：{name} - {str(e)}")
+                    logging.warning(f"字体加载失败：{font_name} - {str(e)}")
+                    continue
 
-        if not self.available_fonts:
-            self.pdf.add_font("Arial", "", "arial", uni=True)
-            self.available_fonts.append("Arial")
-
-        self.current_font = self.available_fonts[0]
-        self.pdf.set_font(self.current_font, size=DEFAULT_FONT_SIZE)
+        self.current_font = next(
+            (f for f in ["NotoSansCJKsc", "PingFang", "Arial"] if f in self.available_fonts),
+            self.available_fonts[0] if self.available_fonts else None
+        )
+        if self.current_font:
+            self.pdf.set_font(self.current_font, size=DEFAULT_FONT_SIZE)
 
     def _handle_unicode_char(self, char):
-        """智能字体切换"""
+        """智能字体切换（支持回退）"""
         original_font = self.current_font
         for font in self.available_fonts:
             try:
@@ -114,7 +119,7 @@ class PDFConverter:
 
     def add_text(self, text):
         """精确换行文本处理"""
-        self.pdf.start_section("")
+        self.pdf.set_font_size(CONTENT_FONT_SIZE)  # 使用更大的字体
         paragraphs = text.split('\n')
 
         for para in paragraphs:
@@ -152,111 +157,105 @@ class PDFConverter:
             self.pdf.ln(3)
 
     def add_cover_image(self, image_path):
-        """添加封面页"""
-        self.pdf.add_page()
-        self.pdf.set_auto_page_break(False)
-        margin = 15
-        img_width = MAX_PAGE_WIDTH - 2 * margin
-        img_height = MAX_PAGE_HEIGHT - 2 * margin - 10
+        """高清封面处理"""
+        try:
+            with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+                temp_path = tmp.name
 
-        with tempfile.TemporaryDirectory() as temp_dir:
-            try:
-                temp_img_path = os.path.join(temp_dir, "cover.jpg")
                 with Image.open(image_path) as img:
-                    if img.mode != 'RGB':
+                    # 保持原始色彩模式
+                    if img.mode not in ('RGB', 'L'):
                         img = img.convert('RGB')
 
-                    # 计算最佳缩放比例
-                    width_ratio = img_width / img.width
-                    height_ratio = img_height / img.height
-                    scale_ratio = min(width_ratio, height_ratio)
-
+                    # 计算最佳缩放尺寸
+                    original_width, original_height = img.size
+                    target_width = int(MAX_PAGE_WIDTH * 0.9 * 3.78)  # 90%页面宽度（像素）
+                    scaling_factor = min(target_width / original_width, 1.0)  # 不超过原尺寸
                     new_size = (
-                        int(img.width * scale_ratio),
-                        int(img.height * scale_ratio)
+                        int(original_width * scaling_factor),
+                        int(original_height * scaling_factor)
                     )
+
+                    # 使用LANCZOS算法保持清晰度
                     img = img.resize(new_size, Image.Resampling.LANCZOS)
-                    img.save(temp_img_path, quality=95, optimize=True)
 
-                # 计算居中位置
-                x = margin + (img_width - new_size[0] * 0.264583) / 2
-                y = margin + (img_height - new_size[1] * 0.264583) / 2
+                    # 保存为无损PNG格式
+                    img.save(temp_path, format='PNG', compress_level=0)
 
-                self.pdf.image(
-                    temp_img_path,
-                    x=x,
-                    y=y,
-                    w=new_size[0] * 0.264583,
-                    h=new_size[1] * 0.264583
-                )
+                # 添加到PDF（使用原始尺寸计算毫米单位）
+                self.pdf.add_page()
+                page_width = self.pdf.w - 20  # 留10mm边距
+                x = 10 + (page_width - (new_size[0] / 3.78)) / 2  # 1英寸=25.4mm, 300dpi下1像素≈0.084mm
+                self.pdf.image(temp_path, x=x, y=20, w=new_size[0] / 3.78)  # 精确像素转毫米
 
-                # 添加封面文字
-                self.pdf.set_font(self.current_font, 'B', 16)
-                self.pdf.set_xy(margin, MAX_PAGE_HEIGHT - margin - 10)
-                self.pdf.cell(0, 10, "封面", align='C')
-            except Exception as e:
-                logging.error(f"封面处理异常: {str(e)}")
-                raise
+                # 移动封面到最后一页
+                if len(self.pdf.pages) > 1:
+                    cover_page = self.pdf.pages.pop()
+                    self.pdf.pages.append(cover_page)
 
-        self.pdf.set_auto_page_break(True, margin=15)
+        except Exception as e:
+            logging.error(f"封面处理异常: {str(e)}")
+        finally:
+            if os.path.exists(temp_path):
+                os.remove(temp_path)
 
     def add_section_title(self, title):
-        """添加章节标题"""
+        """章节标题样式"""
         self.pdf.set_font(self.current_font, 'B', 16)
-        self.pdf.cell(0, 10, title, ln=True)
-        self.pdf.ln(5)
-        self.pdf.set_font(self.current_font, size=DEFAULT_FONT_SIZE)
+        self.pdf.set_fill_color(240, 240, 240)
+        self.pdf.cell(0, 12, title, ln=True, fill=True, border=0)
+        self.pdf.ln(8)
+        self.pdf.set_font_size(CONTENT_FONT_SIZE)  # 恢复内容字体大小
 
     def save(self, output_path):
+        """最终保存方法"""
         self.pdf.output(output_path)
 
 
 def convert_video_folder(folder_path, output_dir, root_folder):
-    """处理视频文件夹转换"""
+    """改进的视频文件夹处理"""
     try:
-        # 生成输出文件名
-        relative_path = os.path.relpath(folder_path, root_folder)
-        path_parts = [sanitize_filename(p) for p in relative_path.split(os.sep) if p]
-        folder_name = "_".join(path_parts[-3:]) if len(path_parts) >= 3 else "_".join(path_parts) or "root"
-        output_name = f"xhs_视频_{folder_name}.pdf"
-        output_path = os.path.join(output_dir, output_name)
+        required_files = {
+            'detail.txt': None,
+            'audio.txt': None,
+            'cover.jpg': None
+        }
 
-        if os.path.exists(output_path):
-            logging.info(f"视频PDF已存在，跳过：{output_name}")
-            return False
+        for fname in required_files:
+            fpath = os.path.join(folder_path, fname)
+            if not os.path.exists(fpath):
+                raise FileNotFoundError(f"缺失必要文件: {fname}")
+            required_files[fname] = fpath
 
-        # 检查必要文件
-        detail_path = os.path.join(folder_path, 'detail.txt')
-        audio_path = os.path.join(folder_path, 'audio.txt')
-        cover_path = os.path.join(folder_path, 'cover.jpg')
-
-        if not all(map(os.path.exists, [detail_path, audio_path, cover_path])):
-            missing = [f for f in ['detail.txt', 'audio.txt', 'cover.jpg'] if
-                       not os.path.exists(os.path.join(folder_path, f))]
-            logging.warning(f"缺失必要文件: {', '.join(missing)}")
-            return False
-
-        # 初始化转换器
         converter = PDFConverter()
+        converter.add_cover_image(required_files['cover.jpg'])
+        converter.pdf.add_page()
 
-        # 添加封面
-        converter.add_cover_image(cover_path)
-
-        # 添加详细内容
-        with open(detail_path, 'rb') as f:
+        # 添加详情内容
+        with open(required_files['detail.txt'], 'rb') as f:
             detail_text = f.read().decode('utf-8', errors='replace')
         converter.add_text(detail_text)
 
-        # 添加视频文稿
+        # 添加视频文稿（使用更大字体）
         converter.pdf.add_page()
         converter.add_section_title("视频文稿")
-        with open(audio_path, 'rb') as f:
+        converter.pdf.set_font_size(CONTENT_FONT_SIZE)
+        with open(required_files['audio.txt'], 'rb') as f:
             audio_text = f.read().decode('utf-8', errors='replace')
         converter.add_text(audio_text)
 
-        converter.save(output_path)
-        logging.info(f"视频PDF转换成功：{output_name}")
-        return True
+        # 生成输出路径
+        relative_path = os.path.relpath(folder_path, root_folder)
+        path_parts = [sanitize_filename(p) for p in relative_path.split(os.sep) if p]
+        folder_name = "_".join(path_parts[-3:]) or "root"
+        output_name = f"xhs_视频_{folder_name}.pdf"
+        output_path = os.path.join(output_dir, output_name)
+
+        if not os.path.exists(output_path):
+            converter.save(output_path)
+            logging.info(f"视频PDF转换成功：{output_name}")
+            return True
+        return False
 
     except Exception as e:
         logging.error(f"视频文件夹转换失败：{folder_path} - {str(e)}")
@@ -264,31 +263,29 @@ def convert_video_folder(folder_path, output_dir, root_folder):
 
 
 def convert_normal_txt(txt_path, output_dir, root_folder):
-    """处理普通文本文件转换"""
+    """普通文本转换"""
     try:
+        with open(txt_path, "rb") as f:
+            text = f.read().decode('utf-8', errors='replace')
+
+        converter = PDFConverter()
+        converter.pdf.add_page()  # 添加内容页
+        converter.add_text(text)
+
+        # 生成输出路径
         txt_dir = os.path.dirname(txt_path)
         relative_path = os.path.relpath(txt_dir, root_folder)
         path_parts = [sanitize_filename(p) for p in relative_path.split(os.sep) if p]
         base_name = sanitize_filename(os.path.splitext(os.path.basename(txt_path))[0])
-        folder_name = "_".join(path_parts[-3:]) if len(path_parts) >= 3 else "_".join(path_parts) or "root"
-
+        folder_name = "_".join(path_parts[-3:]) or "root"
         output_name = f"xhs_{folder_name}_{base_name}.pdf"
         output_path = os.path.join(output_dir, output_name)
 
-        if os.path.exists(output_path):
-            logging.info(f"文件已存在，跳过转换：{output_name}")
-            return False
-
-        converter = PDFConverter()
-        with open(txt_path, "rb") as f:
-            text = f.read().decode('utf-8', errors='replace')
-
-        converter.add_text(text)
-        converter.add_images(txt_dir)
-        converter.save(output_path)
-
-        logging.info(f"转换成功：{output_name}")
-        return True
+        if not os.path.exists(output_path):
+            converter.save(output_path)
+            logging.info(f"转换成功：{output_name}")
+            return True
+        return False
 
     except Exception as e:
         logging.error(f"转换失败：{txt_path} - {str(e)}")
@@ -298,56 +295,41 @@ def convert_normal_txt(txt_path, output_dir, root_folder):
 def main():
     setup_logging()
 
-    # root_folder = input("请输入根文件夹路径：").strip()
+    # if len(sys.argv) < 2:
+    #     root_folder = input("请输入根文件夹路径：").strip()
+    # else:
+    #     root_folder = sys.argv[1]
+    #
     # if not os.path.isdir(root_folder):
     #     logging.error("错误：路径不存在或不是文件夹")
     #     return
 
-    root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas/media_datas/健康/阿文就是Aya_5659a9f903eb841795e4fba9/8cm长的隧道，居然要干这么多活!_665ef0cd000000000e032f24'
-
+    root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas'
     output_dir_normal = os.path.join(root_folder, "PDF输出")
-    output_dir_video = os.path.join(root_folder, "输出视频pdf")
+    output_dir_video = os.path.join(root_folder, "视频PDF输出")
     os.makedirs(output_dir_normal, exist_ok=True)
     os.makedirs(output_dir_video, exist_ok=True)
 
     processed_normal = 0
     processed_video = 0
-    missing_files = []
 
     for root, dirs, files in os.walk(root_folder):
         if any(os.path.abspath(root).startswith(os.path.abspath(d)) for d in [output_dir_normal, output_dir_video]):
             continue
 
-        has_video = any(f.lower().endswith(VIDEO_EXT) for f in files)
-        if has_video:
-            required_files = {'detail.txt', 'audio.txt', 'cover.jpg'}
-            present_files = set(files) & required_files
-            if present_files == required_files:
-                if convert_video_folder(root, output_dir_video, root_folder):
-                    processed_video += 1
-            else:
-                missing = required_files - present_files
-                missing_files.append((os.path.relpath(root, root_folder), missing))
-        else:
-            for file in files:
-                if file.lower().endswith('.txt'):
-                    if convert_normal_txt(os.path.join(root, file), output_dir_normal, root_folder):
-                        processed_normal += 1
+        # 优先处理视频文件夹
+        if any(f.lower().endswith(VIDEO_EXT) for f in files):
+            if convert_video_folder(root, output_dir_video, root_folder):
+                processed_video += 1
+    print(processed_video)
 
-    # 输出统计信息
-    logging.info(f"\n转换统计：")
-    logging.info(f"普通文件转换成功: {processed_normal}")
-    logging.info(f"视频文件转换成功: {processed_video}")
+        # 处理普通文本文件
+        # for file in files:
+        #     if file.lower().endswith('.txt') and not file.lower().endswith('audio.txt'):
+        #         if convert_normal_txt(os.path.join(root, file), output_dir_normal, root_folder):
+        #             processed_normal += 1
 
-    if missing_files:
-        logging.warning("\n缺失文件警告：")
-        for path, missing in missing_files:
-            logging.warning(f"路径: {path}")
-            logging.warning(f"缺失文件: {', '.join(missing)}")
-            logging.warning("------------------------")
-
-    if processed_video + processed_normal == 0:
-        logging.warning("没有找到任何可转换的文件")
+    logging.info(f"\n转换统计：普通文件 {processed_normal} 个，视频文件夹 {processed_video} 个")
 
 
 if __name__ == "__main__":

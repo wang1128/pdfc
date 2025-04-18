@@ -1,7 +1,7 @@
 asr==0.4.1
 faster_whisper==1.1.1
 fontTools==4.57.0
-fpdf==1.7.2
+fpdf2
 funasr==1.2.6
 moviepy==2.1.2
 Pillow >= 9.2.0
