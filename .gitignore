@@ -1,3 +1,4 @@
 *.log
 conversion.log
 /.idea
+*.wav
