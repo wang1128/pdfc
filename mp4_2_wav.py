@@ -130,11 +130,12 @@ def main():
         logging.error("FFmpeg未正确安装，请参考：https://ffmpeg.org/download.html")
         return
 
-    # root_folder = input("请输入根文件夹路径：").strip()
-    # if not os.path.isdir(root_folder):
-    #     logging.error("错误：路径不存在或不是文件夹")
-    #     return
-    root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas'
+    root_folder = input("请输入根文件夹路径：").strip()
+    if not os.path.isdir(root_folder):
+        logging.error("错误：路径不存在或不是文件夹")
+        return
+    # root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas'
+    # /Volumes/Penghao/xhs_2025/media_datas
 
     processed = 0
     for root, dirs, files in os.walk(root_folder):
