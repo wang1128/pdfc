@@ -305,7 +305,7 @@ def main():
     #     return
 
     root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas'
-    output_dir_normal = os.path.join(root_folder, "PDF输出")
+    output_dir_normal = os.path.join(root_folder, "图文PDF输出")
     output_dir_video = os.path.join(root_folder, "视频PDF输出")
     os.makedirs(output_dir_normal, exist_ok=True)
     os.makedirs(output_dir_video, exist_ok=True)

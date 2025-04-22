@@ -3,3 +3,5 @@
 2025-04-17 01:22:42,396 [WARNING] 1. brew tap homebrew/cask-fonts
 2025-04-17 01:22:42,396 [WARNING] 2. brew install --cask font-noto-sans-cjk-sc
 2025-04-17 01:22:42,396 [ERROR] 系统字体检查未通过，请先安装缺失字体
+2025-04-22 12:43:14,191 [ERROR] 视频转换失败: /Users/penghao/Desktop/2024-05-21 18.53.55_高敏感的人很难在底层生存高敏感的人很难在 - 'str' object has no attribute 'i'
+2025-04-22 12:43:14,192 [INFO] 转换完成！常规文件: 0 个, 视频文件夹: 0 个

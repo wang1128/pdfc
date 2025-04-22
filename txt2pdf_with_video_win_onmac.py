@@ -122,7 +122,7 @@ class PDFConverter:
             lines = self.pdf.multi_cell(
                 w=MAX_PAGE_WIDTH - 20,
                 h=10,
-                txt=para,
+                text=para,
                 split_only=True,
                 output=FileOutput()
             )
@@ -153,47 +153,35 @@ class PDFConverter:
             self.pdf.ln(3)
 
     def add_cover_image(self, image_path):
-        """高清封面处理"""
+        """增强封面处理功能"""
+        logging.info(f"开始处理封面图片：{image_path}")
         try:
-            with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
-                temp_path = tmp.name
+            with Image.open(image_path) as img:
+                # 转换颜色模式并计算尺寸
+                if img.mode == 'RGBA':
+                    background = Image.new('RGB', img.size, (255, 255, 255))
+                    background.paste(img, mask=img.split()[3])
+                    img = background
 
-                with Image.open(image_path) as img:
-                    # 保持原始色彩模式
-                    if img.mode not in ('RGB', 'L'):
-                        img = img.convert('RGB')
+                width_mm = img.width * 0.0846  # 像素转毫米（300dpi）
+                height_mm = img.height * 0.0846
 
-                    # 计算最佳缩放尺寸
-                    original_width, original_height = img.size
-                    target_width = int(MAX_PAGE_WIDTH * 0.9 * 3.78)  # 90%页面宽度（像素）
-                    scaling_factor = min(target_width / original_width, 1.0)  # 不超过原尺寸
-                    new_size = (
-                        int(original_width * scaling_factor),
-                        int(original_height * scaling_factor)
-                    )
+                # 创建临时PDF页面
+                self.pdf.add_page(format=(width_mm + 20, height_mm + 20))
+                x = (self.pdf.w - width_mm) / 2
+                y = (self.pdf.h - height_mm) / 2
 
-                    # 使用LANCZOS算法保持清晰度
-                    img = img.resize(new_size, Image.Resampling.LANCZOS)
+                # 使用原始尺寸保存临时文件
+                with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+                    img.save(tmp.name, 'PNG', compress_level=0)
+                    self.pdf.image(tmp.name, x=x, y=y, w=width_mm)
 
-                    # 保存为无损PNG格式
-                    img.save(temp_path, format='PNG', compress_level=0)
-
-                # 添加到PDF（使用原始尺寸计算毫米单位）
-                self.pdf.add_page()
-                page_width = self.pdf.w - 20  # 留10mm边距
-                x = 10 + (page_width - (new_size[0] / 3.78)) / 2  # 1英寸=25.4mm, 300dpi下1像素≈0.084mm
-                self.pdf.image(temp_path, x=x, y=20, w=new_size[0] / 3.78)  # 精确像素转毫米
-
-                # 移动封面到最后一页
-                if len(self.pdf.pages) > 1:
-                    cover_page = self.pdf.pages.pop()
-                    self.pdf.pages.append(cover_page)
+                logging.info(f"封面图片处理成功：{image_path}")
+                return True
 
         except Exception as e:
-            logging.error(f"封面处理异常: {str(e)}")
-        finally:
-            if os.path.exists(temp_path):
-                os.remove(temp_path)
+            logging.error(f"封面处理失败: {str(e)}", exc_info=True)
+            return False
 
     def add_section_title(self, title):
         """章节标题样式"""
@@ -216,13 +204,19 @@ def extract_number(filename):
 
 
 def convert_video_folder(folder_path, output_dir, root_folder):
+    """
+    处理视频文件夹转换的完整函数
+    生成路径示例：
+    输入：/test/老于/2024-05-21 18.53.55_标题
+    输出：视频PDF输出/老于/douyin_视频_老于_2024-05-21-18-53-55_标题.pdf
+    """
     try:
-        # 验证必要文件
+        # ===================== 1. 必要文件验证 =====================
         detail_path = os.path.join(folder_path, 'detail.txt')
         if not os.path.exists(detail_path):
             raise FileNotFoundError("缺失detail.txt")
 
-        # 获取并排序文件
+        # 获取排序后的文件列表
         audio_files = sorted(
             glob.glob(os.path.join(folder_path, 'audio_*.txt')),
             key=extract_number
@@ -238,40 +232,84 @@ def convert_video_folder(folder_path, output_dir, root_folder):
         if not cover_files:
             raise FileNotFoundError("未找到cover图片文件")
 
-        # 读取内容
+        # ===================== 2. 内容读取处理 =====================
+        # 读取detail.txt内容（带异常字符处理）
         with open(detail_path, 'rb') as f:
             detail_text = f.read().decode('utf-8', errors='replace')
 
-        audio_text = "\n".join([
-            open(af, 'rb').read().decode('utf-8', errors='replace')
-            for af in audio_files
-        ])
+        # 合并音频文稿内容
+        audio_text = []
+        for af in audio_files:
+            try:
+                with open(af, 'rb') as f:
+                    audio_text.append(f.read().decode('utf-8', errors='replace'))
+            except Exception as e:
+                logging.warning(f"音频文件读取失败：{af} - {str(e)}")
+                audio_text.append("[损坏内容]")
 
-        # 创建PDF
+        # ===================== 3. PDF生成核心 =====================
         converter = PDFConverter()
-        converter.add_cover_image(cover_files[0])
-        converter.pdf.add_page()
-        converter.add_text(detail_text)
 
-        converter.pdf.add_page()
-        converter.add_section_title("视频文稿")
-        converter.add_text(audio_text.strip())
+        # 3.1 添加封面图片（多封面支持）
+        for cover in cover_files:
+            if not converter.add_cover_image(cover):
+                logging.warning(f"封面添加失败：{cover}")
 
-        # 生成输出路径
+        # 3.2 添加详情内容
+        converter.pdf.add_page()
+        converter.add_text(detail_text.strip())
+
+        # 3.3 添加音频文稿
+        converter.pdf.add_page()
+        converter.add_section_title("视频完整文稿")
+        converter.add_text('\n'.join(audio_text).strip())
+
+        # ===================== 4. 智能路径生成 =====================
+        # 4.1 提取路径要素
         relative_path = os.path.relpath(folder_path, root_folder)
-        path_parts = [sanitize_filename(p) for p in relative_path.split(os.sep) if p]
-        folder_name = "_".join(path_parts[-3:]) or "root"
-        output_name = f"xhs_视频_{folder_name}.pdf"
-        output_path = os.path.join(output_dir, output_name)
+        path_parts = [p for p in relative_path.split(os.sep) if p]
 
-        if not os.path.exists(output_path):
-            converter.save(output_path)
-            logging.info(f"视频PDF转换成功：{output_name}")
-            return True
-        return False
+        # 4.2 确定父文件夹（test的下一层）
+        parent_folder = "未分类"
+        if len(path_parts) > 0:
+            parent_folder = sanitize_filename(path_parts[0])
+
+        # 4.3 处理当前文件夹名称
+        current_folder = os.path.basename(folder_path)
+        name_parts = current_folder.split('_', 1)  # 分割日期和标题
+
+        # 日期标准化处理（处理 2024-05-21 18.53.55 格式）
+        date_part = re.sub(r'[ :.]+', '-', name_parts[0]) if len(name_parts) > 0 else "无日期"
+
+        # 标题处理（截断至60字符）
+        title_part = name_parts[1] if len(name_parts) > 1 else "无标题"
+        title_part = sanitize_filename(title_part)[:60].rstrip('_')
+
+        # 4.4 构建最终路径
+        output_subdir = os.path.join(output_dir, parent_folder)
+        os.makedirs(output_subdir, exist_ok=True)
+
+        output_name = f"douyin_视频_{parent_folder}_{date_part}_{title_part}.pdf"
+        output_path = os.path.join(output_subdir, output_name)
+
+        # ===================== 5. 冲突处理机制 =====================
+        # 处理文件重名（自动添加序号）
+        counter = 1
+        original_output = output_path
+        while os.path.exists(output_path):
+            new_name = f"{os.path.splitext(output_name)[0]}_{counter}.pdf"
+            output_path = os.path.join(output_subdir, new_name)
+            counter += 1
+            if counter > 99:  # 防止无限循环
+                raise Exception("文件重名超过最大限制")
+
+        # ===================== 6. 最终保存操作 =====================
+        converter.save(output_path)
+        logging.info(f"转换成功：{os.path.relpath(output_path, output_dir)}")
+        return True
 
     except Exception as e:
-        logging.error(f"视频文件夹转换失败：{folder_path} - {str(e)}")
+        logging.error(f"转换失败：{folder_path}\n错误详情：{str(e)}", exc_info=True)
         return False
 
 
@@ -289,7 +327,7 @@ def convert_normal_txt(txt_path, output_dir, root_folder):
         path_parts = [sanitize_filename(p) for p in relative_path.split(os.sep) if p]
         base_name = sanitize_filename(os.path.splitext(os.path.basename(txt_path))[0])
         folder_name = "_".join(path_parts[-3:]) or "root"
-        output_name = f"xhs_{folder_name}_{base_name}.pdf"
+        output_name = f"douyin_{folder_name}_{base_name}.pdf"
         output_path = os.path.join(output_dir, output_name)
 
         if not os.path.exists(output_path):
@@ -315,7 +353,7 @@ def main():
         logging.error("错误：路径不存在或不是文件夹")
         return
 
-    output_dir_normal = os.path.join(root_folder, "PDF输出")
+    output_dir_normal = os.path.join(root_folder, "普通PDF输出")
     output_dir_video = os.path.join(root_folder, "视频PDF输出")
     os.makedirs(output_dir_normal, exist_ok=True)
     os.makedirs(output_dir_video, exist_ok=True)
@@ -334,10 +372,10 @@ def main():
                 processed_video += 1
 
         # 处理普通文本文件
-        for file in files:
-            if file.lower().endswith('.txt') and not file.lower().startswith('audio_'):
-                if convert_normal_txt(os.path.join(root, file), output_dir_normal, root_folder):
-                    processed_normal += 1
+        # for file in files:
+        #     if file.lower().endswith('.txt') and not file.lower().startswith('audio_'):
+        #         if convert_normal_txt(os.path.join(root, file), output_dir_normal, root_folder):
+        #             processed_normal += 1
 
     logging.info(f"\n转换完成：普通文件 {processed_normal} 个，视频文件夹 {processed_video} 个")
 
