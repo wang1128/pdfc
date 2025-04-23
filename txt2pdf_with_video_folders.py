@@ -299,16 +299,16 @@ def convert_normal_txt(txt_path, output_dir, root_folder):
 def main():
     setup_logging()
 
-    # if len(sys.argv) < 2:
-    #     root_folder = input("请输入根文件夹路径：").strip()
-    # else:
-    #     root_folder = sys.argv[1]
-    #
-    # if not os.path.isdir(root_folder):
-    #     logging.error("错误：路径不存在或不是文件夹")
-    #     return
+    if len(sys.argv) < 2:
+        root_folder = input("请输入根文件夹路径：").strip()
+    else:
+        root_folder = sys.argv[1]
 
-    root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas/media_datas'
+    if not os.path.isdir(root_folder):
+        logging.error("错误：路径不存在或不是文件夹")
+        return
+
+    # root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas/media_datas'
     output_dir_normal = os.path.join(root_folder, "小红书图文PDF输出")
     output_dir_video = os.path.join(root_folder, "小红书视频PDF输出")
     os.makedirs(output_dir_normal, exist_ok=True)

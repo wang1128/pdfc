@@ -65,8 +65,12 @@ def convert_video_to_audio(video_path, audio_path):
             return True
     except Exception as e:
         logging.error(f"转换失败：{video_path} - {str(e)}")
-        if "failed to read the first frame" in str(e):
-            return repair_video(video_path, audio_path)
+        os.remove(video_path)
+        print(f"已删除： {video_path}")
+        ## 不修了，直接删
+        # if "failed to read the first frame" in str(e):
+        #     ####
+        #     return repair_video(video_path, audio_path)
         return False
 
 
@@ -136,6 +140,7 @@ def main():
         return
     # root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas'
     # /Volumes/Penghao/xhs_2025/media_datas
+    # /Users/penghao/GitHub/Spider_XHS/datas/media_datas/挣钱/彦页同学_6754536a000000001d02c042/15高中生赚10000块！（大胆尝试！）_67e5630c00000000090152ac
 
     processed = 0
     for root, dirs, files in os.walk(root_folder):
