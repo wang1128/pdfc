@@ -304,17 +304,18 @@ def main():
     #     logging.error("错误：路径不存在或不是文件夹")
     #     return
 
-    root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas'
-    output_dir_normal = os.path.join(root_folder, "图文PDF输出")
-    output_dir_video = os.path.join(root_folder, "视频PDF输出")
-    os.makedirs(output_dir_normal, exist_ok=True)
+    # root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas'
+    root_folder = '/Volumes/PenghaoMac2/XHS data'
+    # output_dir_normal = os.path.join(root_folder, "图文PDF输出")
+    output_dir_video = os.path.join(root_folder, "汇总小红书视频PDF输出")
+    # os.makedirs(output_dir_normal, exist_ok=True)
     os.makedirs(output_dir_video, exist_ok=True)
 
     processed_normal = 0
     processed_video = 0
 
     for root, dirs, files in os.walk(root_folder):
-        if any(os.path.abspath(root).startswith(os.path.abspath(d)) for d in [output_dir_normal, output_dir_video]):
+        if any(os.path.abspath(root).startswith(os.path.abspath(d)) for d in [ output_dir_video]):
             continue
 
         # 优先处理视频文件夹

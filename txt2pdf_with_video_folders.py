@@ -22,6 +22,69 @@ SUPPORTED_IMAGE_EXT = ('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.webp')
 VIDEO_EXT = ('.mp4', '.avi', '.mov', '.mkv', '.flv', '.wmv', '.wav')
 LOG_FILE = "conversion.log"
 
+import os
+import glob
+global user_id_dict  # 声明为全局字典
+user_id_dict = {}
+
+def process_folder(folder_path):
+    global user_id_dict  # 必须声明为global
+    stats = {
+        'total_files': 0,
+        'total_urls': 0,
+        'success': 0,
+        'failed': 0,
+        'duplicates': 0
+    }
+
+    # 获取所有txt文件路径
+    txt_files = glob.glob(os.path.join(folder_path, "*.txt"))
+    stats['total_files'] = len(txt_files)
+
+    for file_path in txt_files:
+        # 提取赛道名称（不带扩展名）
+        sector_name = os.path.splitext(os.path.basename(file_path))[0]
+
+        with open(file_path, 'r', encoding='utf-8') as f:
+            urls = [line.strip() for line in f if line.strip()]
+
+        for url in urls:
+            stats['total_urls'] += 1
+            profile_pos = url.find('/user/profile/')
+
+            if profile_pos == -1:  # 无效URL格式
+                stats['failed'] += 1
+                continue
+
+            # 计算ID起始位置
+            id_start = profile_pos + len('/user/profile/')
+            query_start = url.find('?', id_start)
+
+            # 提取用户ID
+            user_id = url[id_start:query_start] if query_start != -1 else url[id_start:]
+
+            if not user_id:  # ID为空的情况
+                stats['failed'] += 1
+                continue
+
+            # 更新字典和统计
+            if user_id in user_id_dict:
+                stats['duplicates'] += 1
+            else:
+                stats['success'] += 1
+
+            user_id_dict[user_id] = sector_name  # 始终更新最新赛道名称
+
+    # 打印统计报告
+    print(f"\n{' 统计报告 ':=^40}")
+    print(f"处理文件夹: {folder_path}")
+    print(f"分析文件总数: {stats['total_files']} 个")
+    print(f"有效URL数量: {stats['success']} 条")
+    print(f"无效URL数量: {stats['failed']} 条")
+    print(f"重复ID数量: {stats['duplicates']} 次")
+    print(f"唯一ID总数: {len(user_id_dict)} 个")
+    print("=" * 40 + "\n")
+
 
 def setup_logging():
     """初始化日志记录"""
@@ -221,45 +284,58 @@ def convert_video_folder(folder_path, output_dir, root_folder):
             'audio.txt': None,
             'cover.jpg': None
         }
-
-        for fname in required_files:
-            fpath = os.path.join(folder_path, fname)
-            if not os.path.exists(fpath):
-                raise FileNotFoundError(f"缺失必要文件: {fname}")
-            required_files[fname] = fpath
-
-        converter = PDFConverter()
-        converter.add_cover_image(required_files['cover.jpg'])
-        converter.pdf.add_page()
-
-        # 添加详情内容
-        with open(required_files['detail.txt'], 'rb') as f:
-            detail_text = f.read().decode('utf-8', errors='replace')
-        converter.add_text(detail_text)
-
-        # 添加视频文稿（使用更大字体）
-        converter.pdf.add_page()
-        converter.add_section_title("视频文稿")
-        converter.pdf.set_font_size(CONTENT_FONT_SIZE)
-        with open(required_files['audio.txt'], 'rb') as f:
-            audio_text = f.read().decode('utf-8', errors='replace')
-        converter.add_text(audio_text)
-
         # 生成输出路径
         relative_path = os.path.relpath(folder_path, root_folder)
         path_parts = [sanitize_filename(p) for p in relative_path.split(os.sep) if p]
         folder_name = "_".join(path_parts[-3:]) or "root"
+        user_id = path_parts[0].split('_')[1]
         output_name = f"xhs_视频_{folder_name}.pdf"
-# 改了这里
-        new_output_dir_with_folder = output_dir + '/' + relative_path.split('/')[0]
-        os.makedirs(new_output_dir_with_folder, exist_ok=True)
-        output_path = os.path.join(new_output_dir_with_folder, output_name)
+        # 改了这里
+        # 这里加一个 if，如果这个 dict 有这个 uid
+        sector = user_id_dict.get(user_id)
+        if sector:
+            print('有赛道：' + sector)
+            output_dir_with_folder = output_dir + '/' + sector + '/' + relative_path.split('/')[1]
+            os.makedirs(output_dir_with_folder, exist_ok=True)
+            output_path = os.path.join(output_dir_with_folder, output_name)
+
+        else:
+            print('无赛道')
+            output_dir_with_folder = output_dir + '/' + relative_path.split('/')[1]
+            os.makedirs(output_dir_with_folder, exist_ok=True)
+            output_path = os.path.join(output_dir_with_folder, output_name)
 
         if not os.path.exists(output_path):
+            for fname in required_files:
+                fpath = os.path.join(folder_path, fname)
+                if not os.path.exists(fpath):
+                    raise FileNotFoundError(f"缺失必要文件: {fname}")
+                required_files[fname] = fpath
+
+            converter = PDFConverter()
+            converter.add_cover_image(required_files['cover.jpg'])
+            converter.pdf.add_page()
+
+            # 添加详情内容
+            with open(required_files['detail.txt'], 'rb') as f:
+                detail_text = f.read().decode('utf-8', errors='replace')
+            converter.add_text(detail_text)
+
+            # 添加视频文稿（使用更大字体）
+            converter.pdf.add_page()
+            converter.add_section_title("视频文稿")
+            converter.pdf.set_font_size(CONTENT_FONT_SIZE)
+            with open(required_files['audio.txt'], 'rb') as f:
+                audio_text = f.read().decode('utf-8', errors='replace')
+            converter.add_text(audio_text)
+
+
             converter.save(output_path)
             logging.info(f"视频PDF转换成功：{output_name}")
             return True
-        return False
+        else:
+            logging.info(f"视频PDF已存在：{output_name}")
+            return False
 
     except Exception as e:
         logging.error(f"视频文件夹转换失败：{folder_path} - {str(e)}")
@@ -298,15 +374,18 @@ def convert_normal_txt(txt_path, output_dir, root_folder):
 
 def main():
     setup_logging()
+    target_folder = "/Users/penghao/GitHub/Spider_XHS/赛道汇总"
+    process_folder(target_folder)
 
-    if len(sys.argv) < 2:
-        root_folder = input("请输入根文件夹路径：").strip()
-    else:
-        root_folder = sys.argv[1]
-
-    if not os.path.isdir(root_folder):
-        logging.error("错误：路径不存在或不是文件夹")
-        return
+    # if len(sys.argv) < 2:
+    #     root_folder = input("请输入根文件夹路径：").strip()
+    # else:
+    #     root_folder = sys.argv[1]
+    #
+    # if not os.path.isdir(root_folder):
+    #     logging.error("错误：路径不存在或不是文件夹")
+    #     return
+    root_folder = '/Volumes/PenghaoMac2/XHS data'
 
     # root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas/media_datas'
     output_dir_normal = os.path.join(root_folder, "小红书图文PDF输出")

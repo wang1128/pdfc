@@ -271,7 +271,7 @@ def convert_file(txt_path, output_dir, root_folder):
         base_name = sanitize_filename(os.path.splitext(os.path.basename(txt_path))[0])
         folder_name = "_".join(path_parts[-3:]) if len(path_parts) >= 3 else "_".join(path_parts) or "root"
 
-        output_name = f"xhs_{folder_name}_{base_name}.pdf"
+        output_name = f"xhs_图文_{folder_name}_{base_name}.pdf"
         output_path = os.path.join(output_dir, output_name)
 
         # 存在性检查
@@ -299,12 +299,13 @@ def convert_file(txt_path, output_dir, root_folder):
 def main():
     setup_logging()
 
-    root_folder = input("请输入根文件夹路径：").strip()
-    if not os.path.isdir(root_folder):
-        logging.error("错误：路径不存在或不是文件夹")
-        return
+    # root_folder = input("请输入根文件夹路径：").strip()
+    # if not os.path.isdir(root_folder):
+    #     logging.error("错误：路径不存在或不是文件夹")
+    #     return
+    root_folder = '/Volumes/PenghaoMac2/XHS data'
 
-    output_dir = os.path.join(root_folder, "PDF输出")
+    output_dir = os.path.join(root_folder, "汇总小红书图文PDF输出")
     os.makedirs(output_dir, exist_ok=True)
 
     processed = 0

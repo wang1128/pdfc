@@ -65,8 +65,8 @@ def convert_video_to_audio(video_path, audio_path):
             return True
     except Exception as e:
         logging.error(f"转换失败：{video_path} - {str(e)}")
-        os.remove(video_path)
-        print(f"已删除： {video_path}")
+        # os.remove(video_path)
+        # print(f"已删除： {video_path}")
         ## 不修了，直接删
         # if "failed to read the first frame" in str(e):
         #     ####
@@ -130,18 +130,18 @@ def process_directory(folder_path):
 def main():
     setup_logging()
 
-    if not check_ffmpeg():
-        logging.error("FFmpeg未正确安装，请参考：https://ffmpeg.org/download.html")
-        return
+    # if not check_ffmpeg():
+    #     logging.error("FFmpeg未正确安装，请参考：https://ffmpeg.org/download.html")
+    #     return
 
-    root_folder = input("请输入根文件夹路径：").strip()
-    if not os.path.isdir(root_folder):
-        logging.error("错误：路径不存在或不是文件夹")
-        return
+    # root_folder = input("请输入根文件夹路径：").strip()
+    # if not os.path.isdir(root_folder):
+    #     logging.error("错误：路径不存在或不是文件夹")
+    #     return
     # root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas'
     # /Volumes/Penghao/xhs_2025/media_datas
     # /Users/penghao/GitHub/Spider_XHS/datas/media_datas/挣钱/彦页同学_6754536a000000001d02c042/15高中生赚10000块！（大胆尝试！）_67e5630c00000000090152ac
-
+    root_folder = '/Volumes/PenghaoMac2/XHS data'
     processed = 0
     for root, dirs, files in os.walk(root_folder):
         if process_directory(root):

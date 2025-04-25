@@ -9,7 +9,7 @@ def test_service():
     create_response = requests.post(
         f"{BASE_URL}/tasks",
         json={
-            "input_path": "/Volumes/PenghaoMac2/XHS data/user_5faf525200000000010035f3",
+            "input_path": "/Volumes/PenghaoMac2/XHS data/",
             "priority": 0
         }
     )

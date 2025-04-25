@@ -49,9 +49,13 @@ def process_audio(wav_path):
         base_name = os.path.splitext(file_name)[0]
         txt_path = os.path.join(dir_path, f"{base_name}.txt")
 
-        # 跳过已处理文件
-        if os.path.exists(txt_path):
-            print("已处理")
+        # 新增：检查同目录下是否存在 audio.txt
+        audio_txt_path = os.path.join(dir_path, "audio.txt")
+
+        # 任一文件存在则跳过
+        if os.path.exists(txt_path) or os.path.exists(audio_txt_path):
+            print(audio_txt_path)
+            print("已处理, 有文件")
             return True
 
         model = create_model()
@@ -72,6 +76,11 @@ def process_folder(folder_path):
 
     # 递归扫描目录
     for root, _, files in os.walk(folder_path):
+        # 先检查当前目录是否存在 audio.txt
+        if os.path.exists(os.path.join(root, "audio.txt")):
+            print('find audio.txt')
+            continue  # 跳过包含 audio.txt 的整个目录
+
         for file in files:
             if file.lower().endswith(".wav"):
                 wav_files.append(os.path.join(root, file))
@@ -94,7 +103,7 @@ def process_folder(folder_path):
 
 
 if __name__ == "__main__":
-    print("start")
+    print("start fun asr")
     # parser = argparse.ArgumentParser(description="批量音频转文本工具")
     # parser.add_argument("-i", "--input",
     #                     type=str,
@@ -102,11 +111,13 @@ if __name__ == "__main__":
     #                     help="输入文件夹路径（支持嵌套子目录）")
     # args = parser.parse_args()
 
-    root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas/media_datas'
+    # root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas/media_datas'
     # root_folder = '/Users/penghao/Downloads/pdfc/fun_asr'
+    root_folder = '/Volumes/PenghaoMac2/XHS data'
 
     if not os.path.isdir(root_folder):
         print(f"错误：路径不存在或不是文件夹 - {root_folder}")
         exit(1)
-    print("start")
+    create_model()  # 预加载模型
+    print("create_model")
     process_folder(root_folder)

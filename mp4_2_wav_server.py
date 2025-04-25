@@ -68,7 +68,7 @@ def convert_video_to_audio(video_path, audio_path):
     except Exception as e:
         logging.error(f"转换失败：{video_path} - {str(e)}")
         if os.path.exists(video_path):
-            os.remove(video_path)
+            # os.remove(video_path)
             logging.info(f"已删除损坏文件：{video_path}")
         return False
 

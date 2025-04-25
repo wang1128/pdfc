@@ -26,6 +26,68 @@ SUPPORTED_IMAGE_EXT = ('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.webp')
 VIDEO_EXT = ('.mp4', '.avi', '.mov', '.mkv', '.flv', '.wmv', '.wav')
 LOG_FILE = "conversion.log"
 
+import os
+import glob
+global user_id_dict  # 声明为全局字典
+user_id_dict = {}
+
+def process_folder(folder_path):
+    global user_id_dict  # 必须声明为global
+    stats = {
+        'total_files': 0,
+        'total_urls': 0,
+        'success': 0,
+        'failed': 0,
+        'duplicates': 0
+    }
+
+    # 获取所有txt文件路径
+    txt_files = glob.glob(os.path.join(folder_path, "*.txt"))
+    stats['total_files'] = len(txt_files)
+
+    for file_path in txt_files:
+        # 提取赛道名称（不带扩展名）
+        sector_name = os.path.splitext(os.path.basename(file_path))[0]
+
+        with open(file_path, 'r', encoding='utf-8') as f:
+            urls = [line.strip() for line in f if line.strip()]
+
+        for url in urls:
+            stats['total_urls'] += 1
+            profile_pos = url.find('/user/profile/')
+
+            if profile_pos == -1:  # 无效URL格式
+                stats['failed'] += 1
+                continue
+
+            # 计算ID起始位置
+            id_start = profile_pos + len('/user/profile/')
+            query_start = url.find('?', id_start)
+
+            # 提取用户ID
+            user_id = url[id_start:query_start] if query_start != -1 else url[id_start:]
+
+            if not user_id:  # ID为空的情况
+                stats['failed'] += 1
+                continue
+
+            # 更新字典和统计
+            if user_id in user_id_dict:
+                stats['duplicates'] += 1
+            else:
+                stats['success'] += 1
+
+            user_id_dict[user_id] = sector_name  # 始终更新最新赛道名称
+
+    # 打印统计报告
+    print(f"\n{' 统计报告 ':=^40}")
+    print(f"处理文件夹: {folder_path}")
+    print(f"分析文件总数: {stats['total_files']} 个")
+    print(f"有效URL数量: {stats['success']} 条")
+    print(f"无效URL数量: {stats['failed']} 条")
+    print(f"重复ID数量: {stats['duplicates']} 次")
+    print(f"唯一ID总数: {len(user_id_dict)} 个")
+    print("=" * 40 + "\n")
 
 def setup_logging():
     """初始化日志记录"""
@@ -270,12 +332,22 @@ def convert_file(txt_path, output_dir, root_folder):
         # 文件名生成规则
         base_name = sanitize_filename(os.path.splitext(os.path.basename(txt_path))[0])
         folder_name = "_".join(path_parts[-3:]) if len(path_parts) >= 3 else "_".join(path_parts) or "root"
+        user_id = path_parts[0].split('_')[1]
+        output_name = f"xhs_图文_{folder_name}_{base_name}.pdf"
 
-        output_name = f"xhs_{folder_name}_{base_name}.pdf"
+        # 这里加一个 if，如果这个 dict 有这个 uid
+        sector = user_id_dict.get(user_id)
+        if sector:
+            print('有赛道：' + sector)
+            output_dir_with_folder = output_dir + '/' + sector + '/' + relative_path.split('/')[1]
+            os.makedirs(output_dir_with_folder, exist_ok=True)
+            output_path = os.path.join(output_dir_with_folder, output_name)
 
-        new_output_dir_with_folder = output_dir + '/' + relative_path.split('/')[0]
-        os.makedirs(new_output_dir_with_folder, exist_ok=True)
-        output_path = os.path.join(new_output_dir_with_folder, output_name)
+        else:
+            print('无赛道' )
+            output_dir_with_folder = output_dir + '/' + relative_path.split('/')[1]
+            os.makedirs(output_dir_with_folder, exist_ok=True)
+            output_path = os.path.join(output_dir_with_folder, output_name)
 
 
         # 存在性检查
@@ -302,11 +374,9 @@ def convert_file(txt_path, output_dir, root_folder):
 
 def main():
     setup_logging()
-
-    root_folder = input("请输入根文件夹路径：").strip()
-    if not os.path.isdir(root_folder):
-        logging.error("错误：路径不存在或不是文件夹")
-        return
+    target_folder = "/Users/penghao/GitHub/Spider_XHS/赛道汇总"
+    process_folder(target_folder)
+    root_folder = '/Volumes/PenghaoMac2/XHS data'
 
     output_dir = os.path.join(root_folder, "小红书图文PDF输出")
     os.makedirs(output_dir, exist_ok=True)
