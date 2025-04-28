@@ -141,7 +141,9 @@ def main():
     # root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas'
     # /Volumes/Penghao/xhs_2025/media_datas
     # /Users/penghao/GitHub/Spider_XHS/datas/media_datas/挣钱/彦页同学_6754536a000000001d02c042/15高中生赚10000块！（大胆尝试！）_67e5630c00000000090152ac
-    root_folder = '/Volumes/PenghaoMac2/XHS data'
+    # root_folder = '/Volumes/PenghaoMac2/XHS data'
+    root_folder = 'G:\\XHS data'
+    root_folder = 'D:\\Users\\penghao\\Downloads'
     processed = 0
     for root, dirs, files in os.walk(root_folder):
         if process_directory(root):
