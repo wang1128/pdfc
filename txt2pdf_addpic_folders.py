@@ -23,7 +23,7 @@ DEFAULT_FONT_SIZE = 12
 MAX_PAGE_WIDTH = 190  # A4纸张宽度（mm）
 MAX_PAGE_HEIGHT = 270
 SUPPORTED_IMAGE_EXT = ('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.webp')
-VIDEO_EXT = ('.mp4', '.avi', '.mov', '.mkv', '.flv', '.wmv', '.wav')
+VIDEO_EXT = ('.mp4', '.avi', '.mov', '.mkv', '.flv', '.wmv', '.wav','.mp3')
 LOG_FILE = "conversion.log"
 
 import os

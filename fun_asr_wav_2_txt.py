@@ -26,7 +26,9 @@ def create_model():
         model_paths["punc"]) else "iic/punc_ct-transformer_zh-cn-common-vocab272727-pytorch"
 
     if "zh" not in funasr_models:
-        device = "cuda:0" if torch.cuda.is_available() else "cpu"
+        device = "cuda:0"
+            # if torch.cuda.is_available() else "cpu"
+        print(device)
         model = AutoModel(
             model=path_asr,
             vad_model=path_vad,
@@ -104,17 +106,13 @@ def process_folder(folder_path):
 
 if __name__ == "__main__":
     print("start fun asr")
-    # parser = argparse.ArgumentParser(description="批量音频转文本工具")
-    # parser.add_argument("-i", "--input",
-    #                     type=str,
-    #                     required=True,
-    #                     help="输入文件夹路径（支持嵌套子目录）")
-    # args = parser.parse_args()
+    root_folder = input("请输入根文件夹路径：").strip()
+
 
     # root_folder = '/Users/penghao/Documents/GitHub/Spider_XHS/datas/media_datas'
     # root_folder = '/Users/penghao/Downloads/pdfc/fun_asr'
     # root_folder = '/Volumes/PenghaoMac2/XHS data'
-    root_folder = 'D:\\Users\\penghao\\Downloads'
+    # root_folder = 'D:\\Users\\penghao\\Downloads'
 
     if not os.path.isdir(root_folder):
         print(f"错误：路径不存在或不是文件夹 - {root_folder}")

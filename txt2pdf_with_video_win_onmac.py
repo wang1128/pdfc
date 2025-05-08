@@ -68,18 +68,9 @@ class PDFConverter:
     def _load_fonts(self):
         """加载系统字体（macOS优化版）"""
         font_paths = [
-            ("NotoSansCJKsc", "/System/Library/Fonts/Supplemental/NotoSansCJKsc-Regular.ttf"),
-            ("PingFang", "/System/Library/Fonts/PingFang.ttc"),
-            ("Arial", "/Library/Fonts/Arial.ttf"),
-            ("ArialUnicode", "/System/Library/Fonts/Arial Unicode.ttf"),
-            ("Symbola", "/Library/Fonts/Symbola.ttf"),
-            ("NotoColorEmoji", "/System/Library/Fonts/NotoColorEmoji.ttf"),
-            ("NotoEmoji", "/System/Library/Fonts/NotoColorEmoji.ttf"),
-            ("SegoeUIEmoji", "C:/Windows/Fonts/seguiemj.ttf"),
-            ("Symbola", "/usr/share/fonts/truetype/symbola.ttf"),
-            ("PingFang", os.path.expanduser("~/Library/Fonts/PingFang.ttc")),
-            ("STHeiti", os.path.expanduser("~/Library/Fonts/华文黑体.ttf")),
-            ("ArialUnicode", os.path.expanduser("~/Library/Fonts/Arial Unicode.ttf"))
+            ("MicrosoftYaHei", "C:/Windows/Fonts/msyh.ttc"),  # 微软雅黑（常规）
+            ("SimSun", "C:/Windows/Fonts/simsun.ttc"),  # 宋体
+            ("SegoeUIEmoji", "C:/Windows/Fonts/seguiemj.ttf")  # Segoe UI Emoji
         ]
 
         for font_name, font_path in font_paths:
@@ -354,7 +345,7 @@ def main():
         return
 
     output_dir_normal = os.path.join(root_folder, "普通PDF输出")
-    output_dir_video = os.path.join(root_folder, "视频PDF输出")
+    output_dir_video = os.path.join(root_folder, "抖音PDF输出")
     os.makedirs(output_dir_normal, exist_ok=True)
     os.makedirs(output_dir_video, exist_ok=True)
 
