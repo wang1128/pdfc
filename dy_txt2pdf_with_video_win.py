@@ -4,6 +4,7 @@ txt2pdf_converter.py 最终优化版
 """
 import logging
 import os
+import random
 import re
 import sys
 import tempfile
@@ -58,16 +59,22 @@ def convert_video_data(data):
     """处理单个视频数据"""
     # 提取统计数据（带多层保护）
     stats = data.get('statistics', {})
+    author = data.get('author')
+    if not author:
+        logging.warning(f"no author: {author}")
+
 
     # 处理视频信息
     video_info = {
         'create_time': parse_hybrid_time(data.get('create_time')),
         'desc': data.get('desc', '暂无描述').split('，版本过低')[0],  # 清理描述文本
         'aweme_id': data.get('aweme_id', '未知ID'),
-        'like_count': stats.get('like_count', 0),
+        'digg_count': stats.get('digg_count', 0),
         'comment_count': stats.get('comment_count', 0),
         'collect_count': stats.get('collect_count', 0),
         'share_count': stats.get('share_count', 0)
+        ,'nickname':author.get('nickname','未知ID')
+        , 'follower_count': author.get('follower_count', 0)
     }
 
     # 处理视频播放地址
@@ -93,11 +100,13 @@ def generate_content(video_info):
     return f"""【视频详情】
 发布时间：{time_str}
 视频ID：{video_info['aweme_id']}
+作者：{video_info['nickname']}
+关注人数：{video_info['follower_count']}
 ──────────────
-❤️ 点赞：{format_num(video_info['like_count'])}
-💬 评论：{format_num(video_info['comment_count'])}
-⭐️ 收藏：{format_num(video_info['collect_count'])}
-↗️ 分享：{format_num(video_info['share_count'])}
+点赞：{format_num(video_info['digg_count'])}
+评论：{format_num(video_info['comment_count'])}
+收藏：{format_num(video_info['collect_count'])}
+分享：{format_num(video_info['share_count'])}
 ──────────────
 视频描述：
 {video_info['desc']}
@@ -116,9 +125,9 @@ def json_to_detail(json_path):
             return False
 
         output_path = os.path.join(os.path.dirname(json_path), "detail.txt")
-        # if os.path.exists(output_path):
-        #     logging.info(f"已存在转换结果: {output_path}")
-        #     return True
+        if os.path.exists(output_path):
+            logging.info(f"已存在转换结果: {output_path}")
+            return True
 
         # 读取并解析JSON
         with open(json_path, 'r', encoding='utf-8') as f:
@@ -156,14 +165,22 @@ def process_directory_json(root_dir):
         return
 
     logging.info(f"开始处理目录: {root_dir}")
+    # 遍历根目录及其所有子目录
     for root, _, files in os.walk(root_dir):
-        if 'info.json' in files:
-            json_path = os.path.join(root, 'info.json')
-            logging.info(f"正在处理: {json_path}")
-            if json_to_detail(json_path):
-                logging.info(f"处理成功: {json_path}")
-            else:
-                logging.warning(f"处理失败: {json_path}")
+        # 遍历当前目录下的所有文件
+        for file in files:
+            # 检查是否为JSON文件（不限定文件名）
+            if file.endswith('.json'):
+                json_path = os.path.join(root, file)
+                logging.info(f"正在处理: {json_path}")
+                # 调用处理函数并记录结果
+                try:
+                    if json_to_detail(json_path):
+                        logging.info(f"处理成功: {json_path}")
+                    else:
+                        logging.warning(f"处理失败: {json_path}")
+                except Exception as e:
+                    logging.error(f"处理异常（{e}）: {json_path}")
 
 
 
@@ -438,8 +455,8 @@ def convert_video_folder(folder_path, output_dir, root_folder):
 
         if not audio_files:
             raise FileNotFoundError("未找到audio*.txt文件")
-        if not cover_files:
-            raise FileNotFoundError("未找到cover图片文件")
+        # if not cover_files:
+        #     raise FileNotFoundError("未找到cover图片文件")
 
         # ===================== 2. 内容读取处理 =====================
         # 读取detail.txt内容（带异常字符处理）
@@ -550,11 +567,16 @@ def main():
     processed_video = 0
 
     for root, dirs, files in os.walk(root_folder):
+        # 随机化子目录和文件的遍历顺序
+        random.shuffle(dirs)  # 打乱子目录访问顺序
+        random.shuffle(files)  # 打乱文件处理顺序
+
+        # 跳过输出目录（逻辑不变）
         if any(os.path.abspath(root).startswith(os.path.abspath(d))
                for d in [output_dir_normal, output_dir_video]):
             continue
 
-        # 处理视频文件夹
+        # 处理视频文件夹（文件顺序已随机）
         if any(f.lower().endswith(VIDEO_EXT) for f in files):
             if convert_video_folder(root, output_dir_video, root_folder):
                 processed_video += 1

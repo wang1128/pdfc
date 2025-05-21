@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import argparse
+import random
 import traceback
 import torch
 from tqdm import tqdm
@@ -78,18 +79,22 @@ def process_audio(mp3_path):
         print(f"\n处理失败: {mp3_path}\n{str(e)}")
         return False
 
-
 def process_folder(folder_path):
-    """递归处理文件夹"""
+    """递归处理文件夹（随机遍历顺序）"""
     mp3_files = []
 
-    # 递归扫描目录
-    for root, _, files in os.walk(folder_path):
-        # 先检查当前目录是否存在 audio.txt
-        if os.path.exists(os.path.join(root, "audio.txt")):
-            print(root + 'find audio.txt')
-            continue  # 跳过包含 audio.txt 的整个目录
+    for root, dirs, files in os.walk(folder_path):
+        # 随机化子目录遍历顺序（后续递归顺序随机）
+        random.shuffle(dirs)
+        # 随机化当前目录下的文件处理顺序
+        random.shuffle(files)
 
+        # 跳过包含 audio.txt 的目录
+        if os.path.exists(os.path.join(root, "audio.txt")):
+            print(f"{root} 包含 audio.txt，已跳过")
+            continue
+
+        # 收集当前目录下的 MP3 文件（顺序已随机）
         for file in files:
             if file.lower().endswith(".mp3"):
                 mp3_files.append(os.path.join(root, file))
